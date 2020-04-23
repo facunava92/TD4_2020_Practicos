@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Apr 15 13:23:54 2020
+# Process ID: 3098
+# Current directory: /run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_5/PE_5.runs/synth_1
+# Command line: vivado -log mux_74ls151.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux_74ls151.tcl
+# Log file: /run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_5/PE_5.runs/synth_1/mux_74ls151.vds
+# Journal file: /run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_5/PE_5.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source mux_74ls151.tcl -notrace

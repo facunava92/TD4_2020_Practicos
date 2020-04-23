@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_eq2_func_impl.vhd" \
+"../../../../../PE_0.srcs/sim_1/new/tb_eq2.vhd" \
+
+# Do not sort compile order
+nosort

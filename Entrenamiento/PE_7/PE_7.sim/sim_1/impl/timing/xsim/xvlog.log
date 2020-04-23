@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.sim/sim_1/impl/timing/xsim/tb_oe_counter_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2sseg
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module jk_ff_0
+INFO: [VRFC 10-311] analyzing module jk_ff_1
+INFO: [VRFC 10-311] analyzing module mod_m_counter
+INFO: [VRFC 10-311] analyzing module oe_counter
+INFO: [VRFC 10-311] analyzing module glbl

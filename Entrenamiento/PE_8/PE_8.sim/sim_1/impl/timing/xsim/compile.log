@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_8/PE_8.sim/sim_1/impl/timing/xsim/tb_mod7_counter_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2sseg
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module jk_ff_0
+INFO: [VRFC 10-311] analyzing module jk_ff_1
+INFO: [VRFC 10-311] analyzing module mod7_acounter
+INFO: [VRFC 10-311] analyzing module mod_m_counter
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_8/PE_8.srcs/sim_1/new/tb_mod7_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_mod7_counter'
+ERROR: [VRFC 10-719] formal port/generic <bin> is not declared in <mod7_acounter> [/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_8/PE_8.srcs/sim_1/new/tb_mod7_counter.vhd:39]
+ERROR: [VRFC 10-3782] unit 'tb_arch' ignored due to previous errors [/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_8/PE_8.srcs/sim_1/new/tb_mod7_counter.vhd:22]
+INFO: [VRFC 10-3070] VHDL file '/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_8/PE_8.srcs/sim_1/new/tb_mod7_counter.vhd' ignored due to errors

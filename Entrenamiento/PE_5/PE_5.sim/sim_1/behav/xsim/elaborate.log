@@ -1,0 +1,15 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 65de617f47444a3fb6c1cc6f506f4c4f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_PE5_behav xil_defaultlib.tb_PE5 -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture arch_mux of entity xil_defaultlib.mux_74ls151 [mux_74ls151_default]
+Compiling architecture tb_arch of entity xil_defaultlib.tb_pe5
+Built simulation snapshot tb_PE5_behav

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_3/PE_3.srcs/sources_1/new/mc14028b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mc14028b'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_3/PE_3.srcs/sim_1/new/tb_EP3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_EP3'

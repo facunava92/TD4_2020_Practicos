@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_5/PE_5.srcs/sources_1/new/mux_74ls151.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_74ls151'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_5/PE_5.srcs/sim_1/new/tb_PE5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_PE5'

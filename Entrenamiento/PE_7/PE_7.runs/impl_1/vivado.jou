@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Thu Apr 23 00:27:33 2020
+# Process ID: 96465
+# Current directory: /run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.runs/impl_1
+# Command line: vivado -log oe_counter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source oe_counter.tcl -notrace
+# Log file: /run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.runs/impl_1/oe_counter.vdi
+# Journal file: /run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source oe_counter.tcl -notrace

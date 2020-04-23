@@ -1,0 +1,11 @@
+0.6
+2019.2
+Dec  5 2019
+04:51:02
+/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sim_1/new/tb_oe_counter.vhd,1587611316,vhdl,,,,tb_oe_counter,,,,,,,,
+/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/and2.vhd,1587611316,vhdl,/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/oe_counter.vhd,,,and2,,,,,,,,
+/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/bin2sseg.vhd,1587611316,vhdl,/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/oe_counter.vhd,,,bin2sseg,,,,,,,,
+/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/jk_ff.vhd,1587611316,vhdl,/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/oe_counter.vhd,,,jk_ff,,,,,,,,
+/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/mod_m_counter.vhd,1587611316,vhdl,/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/oe_counter.vhd,,,mod_m_counter,,,,,,,,
+/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/mux2.vhd,1587611316,vhdl,/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/oe_counter.vhd,,,mux2,,,,,,,,
+/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sources_1/new/oe_counter.vhd,1587612093,vhdl,/run/media/fnavarro/DATA/6to/Tecnicas_Digitales_IV/Practicos/Entrenamiento/PE_7/PE_7.srcs/sim_1/new/tb_oe_counter.vhd,,,oe_counter,,,,,,,,

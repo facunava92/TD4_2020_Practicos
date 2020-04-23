@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_mod7_counter_func_impl.vhd" \
+"../../../../../PE_8.srcs/sim_1/new/tb_mod7_counter.vhd" \
+
+# Do not sort compile order
+nosort

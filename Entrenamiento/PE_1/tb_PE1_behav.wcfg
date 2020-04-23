@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_PE1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_PE1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="100001fs"></ZoomEndTime>
+      <Cursor1Time time="100000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="122"></NameColumnWidth>
+      <ValueColumnWidth column_width="119"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject type="logic" fp_name="/tb_PE1/test_enable">
+      <obj_property name="ElementShortName">test_enable</obj_property>
+      <obj_property name="ObjectShortName">test_enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_PE1/test_in0">
+      <obj_property name="ElementShortName">test_in0</obj_property>
+      <obj_property name="ObjectShortName">test_in0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_PE1/test_in1">
+      <obj_property name="ElementShortName">test_in1</obj_property>
+      <obj_property name="ObjectShortName">test_in1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_PE1/test_out">
+      <obj_property name="ElementShortName">test_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">test_out[1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

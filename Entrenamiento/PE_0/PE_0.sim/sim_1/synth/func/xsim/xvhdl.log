@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_0/PE_0.sim/sim_1/synth/func/xsim/tb_eq2_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'eq2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_0/PE_0.srcs/sim_1/new/tb_eq2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_eq2'

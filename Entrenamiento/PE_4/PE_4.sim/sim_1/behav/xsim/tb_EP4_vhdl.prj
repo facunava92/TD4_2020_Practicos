@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PE_4.srcs/sources_1/new/deco4to2.vhd" \
+"../../../../PE_4.srcs/sim_1/new/tb_EP4.vhd" \
+
+# Do not sort compile order
+nosort

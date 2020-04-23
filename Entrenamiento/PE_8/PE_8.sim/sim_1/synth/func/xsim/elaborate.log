@@ -1,0 +1,7 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 75d7aab472ad4b08b4bfeb663f2ec9bb --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_mod7_counter_func_synth xil_defaultlib.tb_mod7_counter -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3114] architecture 'arch' not found in entity 'mod7_acounter' [/run/media/fnavarro/Datos/fnavarro/6to/Tecnicas Digitales IV/Practicos/Entrenamiento/PE_8/PE_8.srcs/sim_1/new/tb_mod7_counter.vhd:34]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_mod7_counter in library work failed.
