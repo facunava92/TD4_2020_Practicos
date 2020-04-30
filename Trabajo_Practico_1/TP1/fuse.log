@@ -1,0 +1,24 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/tb_quadrature_decoder_isim_beh.exe" -prj "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/tb_quadrature_decoder_beh.prj" "work.tb_quadrature_decoder" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/quadrature_decoder.vhd" into library work
+Parsing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/tb_quadrature_decoder.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 83220 KB
+Fuse CPU Usage: 1410 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture arch_combinational of entity quad_decoder [quad_decoder_default]
+Compiling architecture arch_mealy_stm of entity quad_decoder [quad_decoder_default]
+Compiling architecture arch_mealy_stm_v2 of entity quad_decoder [quad_decoder_default]
+Compiling architecture behavior of entity tb_quadrature_decoder
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 VHDL Units
+Built simulation executable /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/tb_quadrature_decoder_isim_beh.exe
+Fuse Memory Usage: 1173236 KB
+Fuse CPU Usage: 1470 ms
+GCC CPU Usage: 450 ms

@@ -1,0 +1,2 @@
+vhdl isim_temp "quadrature_decoder.vhd"
+vhdl isim_temp "tb_quadrature_decoder.vhd"

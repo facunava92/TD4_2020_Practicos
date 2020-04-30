@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/tb_quadrature_decoder_isim_beh.exe" -prj "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/tb_quadrature_decoder_beh.prj" "work.tb_quadrature_decoder" 
