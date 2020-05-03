@@ -5,7 +5,8 @@ use ieee.numeric_std.all;
 
 entity graphic_unit is
     Port ( 
-            clk                 :   in      std_logic;
+            clk, reset          :   in      std_logic;
+            gra_still           :   in      std_logic;
             video_on            :   in      std_logic;
             pixel_x, pixel_y    :   in      std_logic_vector (10 downto 0);
             rgb                 :   out     std_logic_vector (2 downto 0)
@@ -38,8 +39,8 @@ architecture arch of graphic_unit is
     -- x,y COORDENADAS DE (0,0) A (1279,1023) (Display region)
     --=============================================================================
     signal pix_x, pix_y :	unsigned(10 downto 0);
-    constant MAX_X : integer := 1280;
-    constant MAX_Y : integer := 1024;
+    constant MAX_X      : integer := 1280;
+    constant MAX_Y      : integer := 1024;
 
     -----------------------------------------------------------------------------
     -- round ball
@@ -112,31 +113,43 @@ architecture arch of graphic_unit is
     
 begin
 
---=======================================================================================================
--- Asignacion de Registros
---=======================================================================================================
-   process (clk)
-   begin
-      if (rising_edge(clk)) then
-         ball_x_reg 	<= ball_x_next;
-         ball_y_reg     <= ball_y_next;
-         delta_x_reg    <= delta_x_next;
-         delta_y_reg 	<= delta_y_next;
-      end if;
-	end process;
+    --=======================================================================================================
+    -- Asignacion de Registros
+    --=======================================================================================================
+    process (clk, reset)
+    begin
+        if (reset='1') then
+            ball_x_reg     <= (others=>'0');
+            ball_y_reg     <= (others=>'0');
+            delta_x_reg 	<= ("00000001111");
+            delta_y_reg 	<= ("00000001111");
+            elsif (rising_edge(clk)) then
+                if (gra_still = '0') then
+                    ball_x_reg 	<= ball_x_next;
+                    ball_y_reg  <= ball_y_next;
+                    delta_x_reg <= delta_x_next;
+                    delta_y_reg <= delta_y_next;
+                end if;
+        end if;
+    end process;
 
-pix_x <= unsigned(pixel_x);            
-pix_y <= unsigned(pixel_y);
+    pix_x <= unsigned(pixel_x);            
+    pix_y <= unsigned(pixel_y);
 
---=============================================================================
--- SIGNAL DE REFRESCO (1 vez cada inicio de Pantalla /72Hz/)
---=============================================================================
-refr_tick <= '1' when (pix_y = MAX_y + 1) and (pix_x = 0) else
-				 '0';
+    --=============================================================================
+    -- SIGNAL DE REFRESCO (1 vez cada inicio de Pantalla /72Hz/)
+    --=============================================================================
+    refr_tick <= '1' when (pix_y = MAX_y + 1) and (pix_x = 0) else
+                 '0';
 				 
     ----------------------------------------------------------------------------------------------------------
     -- ROUND BALL Circuit Generation (signals and rgb output) 
     ----------------------------------------------------------------------------------------------------------
+    
+    -- Ball Color
+    ----------------------------------------------------------------------------------------------------------
+    rgb_ball <= not(rgb_bg);
+    
     --boundaries (fronteras)
     ball_x_l <= ball_x_reg;
     ball_y_t <= ball_y_reg;
@@ -145,17 +158,17 @@ refr_tick <= '1' when (pix_y = MAX_y + 1) and (pix_x = 0) else
     
     --Pixel dentro del rango de BALL_SIZE
     -------------------------------------------------------------------------------------------------------
-    sq_ball_on <=
-                    '1' when (ball_x_l<=pix_x) and (pix_x<=ball_x_r) and	(ball_y_t<=pix_y) and (pix_y<=ball_y_b) else
+    sq_ball_on <=   '1' when (ball_x_l<=pix_x) and (pix_x<=ball_x_r) and	
+                             (ball_y_t<=pix_y) and (pix_y<=ball_y_b) else
                     '0';
                     
     --Mapea el correspondiente pixel con la posicion de fila(address) y columna(col) dentro de la ROM
     -------------------------------------------------------------------------------------------------------
-    rom_addr <= pix_y(4 downto 1) - ball_y_t(4 downto 1);
-    rom_col 	<= pix_x(4 downto 1) - ball_x_l(4 downto 1);
+    rom_addr    <= pix_y(4 downto 1) - ball_y_t(4 downto 1);
+    rom_col     <= pix_x(4 downto 1) - ball_x_l(4 downto 1);
     
-    rom_data <= BALL_ROM(to_integer(rom_addr));
-    rom_bit <= rom_data(to_integer(rom_col));
+    rom_data    <= BALL_ROM(to_integer(rom_addr));
+    rom_bit     <= rom_data(to_integer(rom_col));
     
     rd_ball_on <=   '1' when (sq_ball_on = '1') and (rom_bit = '1') else
                     '0';
@@ -218,11 +231,11 @@ process(clk)
     -- RGB Output multiplexer
     -------------------------------------------------------------------------------------------------	
     
-    process(video_on, rd_ball_on)
+    process(video_on, rd_ball_on, rgb_ball, rgb_bg)
     begin
         if (video_on = '1') then
             if (rd_ball_on = '1') then
-                rgb_s <= not(rgb_bg);
+                rgb_s <= rgb_ball;
             else
                 rgb_s <= rgb_bg;
             end if;

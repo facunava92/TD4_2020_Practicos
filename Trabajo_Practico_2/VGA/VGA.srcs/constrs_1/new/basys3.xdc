@@ -24,3 +24,11 @@
     #Bank = 14, Pin name = ,				Sch name = VGA_VS
     set_property PACKAGE_PIN R19 [get_ports vsync]
         set_property IOSTANDARD LVCMOS33 [get_ports vsync]
+
+##Buttons
+    set_property PACKAGE_PIN U18 [get_ports reset]						
+	   set_property IOSTANDARD LVCMOS33 [get_ports reset]
+	   
+## Switches
+    set_property PACKAGE_PIN R2 [get_ports {gra_still}]					
+        set_property IOSTANDARD LVCMOS33 [get_ports {gra_still}]	   

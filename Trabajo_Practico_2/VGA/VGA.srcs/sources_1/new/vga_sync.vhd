@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity vga_sync is
     Port( 
-            clk                 :   in std_logic;          
+            clk, reset          :   in std_logic;          
             hsync, vsync        :   out std_logic;
             video_on            :   out std_logic;            
             pixel_x, pixel_y    :   out std_logic_vector (10 downto 0)
@@ -112,9 +112,15 @@ begin
                 '0';
     
     -- Register Outputs
-    process (clk)
+    process (clk, reset)
     begin
-        if (rising_edge(clk)) then 
+        if (reset = '1') then
+            v_sync_reg  <= '0';
+            h_sync_reg  <= '0';      
+            h_count_reg <= (others => '0');
+            v_count_reg <= (others => '0');      
+    
+        elsif (rising_edge(clk)) then 
             v_sync_reg <= v_sync_next;
             h_sync_reg <= h_sync_next;      
             h_count_reg <= h_count_next;
