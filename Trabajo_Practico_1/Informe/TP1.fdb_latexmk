@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1588201565 "TP1.tex" "TP1.pdf" "TP1" 1588201566
+["pdflatex"] 1588201565 "TP1.tex" "TP1.pdf" "TP1" 1588263253
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1572595918 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1572595918 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -96,13 +96,13 @@
   "Imagenes/encoder_cuadratura.jpg" 1588050458 90428 acac844a979e4edb088956fe614ed8ab ""
   "Imagenes/encoder_incremental.jpg" 1588049424 45607 2f7203813ccaa2cc8f92f4d8895fd151 ""
   "Imagenes/mealy.jpg" 1588101701 191521 7b2f6229451b1eaa193396b37a5087f4 ""
-  "TP1.aux" 1588201565 3596 0259105faad54c40c4199b97da53f263 "pdflatex"
-  "TP1.out" 1588201565 1087 d757369ca74aafbf34dcb0c8e23d7694 "pdflatex"
-  "TP1.tex" 1588201565 7473 5a6d0cedb3ccf611ce9c258d167ede6e ""
-  "TP1.toc" 1588201565 1376 0c9976d23113b99b5940270aa782d446 "pdflatex"
+  "TP1.aux" 1588201578 3596 0259105faad54c40c4199b97da53f263 "pdflatex"
+  "TP1.out" 1588201578 1087 d757369ca74aafbf34dcb0c8e23d7694 "pdflatex"
+  "TP1.tex" 1588201566 7473 5a6d0cedb3ccf611ce9c258d167ede6e ""
+  "TP1.toc" 1588201578 1376 0c9976d23113b99b5940270aa782d446 "pdflatex"
   (generated)
-  "TP1.aux"
-  "TP1.toc"
   "TP1.out"
   "TP1.pdf"
   "TP1.log"
+  "TP1.toc"
+  "TP1.aux"
