@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1589431217">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="motorcc_cl.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="motorcc_cl.ltx"/>
+  <File Type="BG-BGN" Name="motorcc_cl.bgn"/>
+  <File Type="RBD_FILE" Name="motorcc_cl.rbd"/>
+  <File Type="BG-DRC" Name="motorcc_cl.drc"/>
+  <File Type="NPI_FILE" Name="motorcc_cl.npi"/>
+  <File Type="RNPI_FILE" Name="motorcc_cl.rnpi"/>
+  <File Type="CFI_FILE" Name="motorcc_cl.cfi"/>
+  <File Type="PDI-FILE" Name="motorcc_cl.pdi"/>
+  <File Type="BITSTR-MMI" Name="motorcc_cl.mmi"/>
+  <File Type="BITSTR-BMM" Name="motorcc_cl_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="motorcc_cl.nky"/>
+  <File Type="BITSTR-RBT" Name="motorcc_cl.rbt"/>
+  <File Type="BITSTR-MSK" Name="motorcc_cl.msk"/>
+  <File Type="BG-BIN" Name="motorcc_cl.bin"/>
+  <File Type="RCFI_FILE" Name="motorcc_cl.rcfi"/>
+  <File Type="BG-BIT" Name="motorcc_cl.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="motorcc_cl_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="motorcc_cl_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="motorcc_cl_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="motorcc_cl.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="motorcc_cl_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="motorcc_cl_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="motorcc_cl_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="motorcc_cl_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="motorcc_cl_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="motorcc_cl_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="motorcc_cl_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="motorcc_cl_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="motorcc_cl_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="motorcc_cl_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="motorcc_cl_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="motorcc_cl_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="motorcc_cl_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="motorcc_cl_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="motorcc_cl_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="motorcc_cl_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="motorcc_cl_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="motorcc_cl_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="motorcc_cl_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="motorcc_cl_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="motorcc_cl_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="motorcc_cl_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="motorcc_cl_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="motorcc_cl_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="motorcc_cl_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="motorcc_cl_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="motorcc_cl_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="motorcc_cl_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="motorcc_cl_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="motorcc_cl_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="motorcc_cl_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="motorcc_cl_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="motorcc_cl_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="motorcc_cl_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="motorcc_cl_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="motorcc_cl_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="motorcc_cl_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="motorcc_cl_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="motorcc_cl_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="motorcc_cl_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="motorcc_cl_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="motorcc_cl_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="motorcc_cl_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="motorcc_cl.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="motorcc_cl_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="motorcc_cl_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="motorcc_cl_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="motorcc_cl_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="motorcc_cl_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="motorcc_cl_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="motorcc_cl_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="motorcc_cl.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/bin2sseg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/disp_mux.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/quadrature_decoder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/up_down_counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/motorcc_cl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="motorcc_cl"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/basys3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

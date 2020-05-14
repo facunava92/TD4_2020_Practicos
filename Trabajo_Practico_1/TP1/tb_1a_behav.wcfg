@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_1a_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_1a" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="971368128333fs"></ZoomStartTime>
+      <ZoomEndTime time="1116768128334fs"></ZoomEndTime>
+      <Cursor1Time time="1003468128333fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="119"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject type="logic" fp_name="/tb_1a/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_1a/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_1a/A">
+      <obj_property name="ElementShortName">A</obj_property>
+      <obj_property name="ObjectShortName">A</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_1a/B">
+      <obj_property name="ElementShortName">B</obj_property>
+      <obj_property name="ObjectShortName">B</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_1a/uut/up_s">
+      <obj_property name="ElementShortName">up_s</obj_property>
+      <obj_property name="ObjectShortName">up_s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_1a/uut/down_s">
+      <obj_property name="ElementShortName">down_s</obj_property>
+      <obj_property name="ObjectShortName">down_s</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_1a/uut/up_down_ctr/r_reg">
+      <obj_property name="ElementShortName">r_reg[13:0]</obj_property>
+      <obj_property name="ObjectShortName">r_reg[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_1a/uut/up_down_ctr/d3">
+      <obj_property name="ElementShortName">d3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d3[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_1a/uut/up_down_ctr/d2">
+      <obj_property name="ElementShortName">d2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d2[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_1a/uut/up_down_ctr/d1">
+      <obj_property name="ElementShortName">d1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d1[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_1a/uut/up_down_ctr/d0">
+      <obj_property name="ElementShortName">d0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d0[3:0]</obj_property>
+   </wvobject>
+</wave_config>

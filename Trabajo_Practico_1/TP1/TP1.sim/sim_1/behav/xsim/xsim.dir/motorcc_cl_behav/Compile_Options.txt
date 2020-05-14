@@ -1,0 +1,1 @@
+-wto "cec3628a41294c55b2ca3e0e7e07050a" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "motorcc_cl_behav" "xil_defaultlib.motorcc_cl" -log "elaborate.log" 

@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TP1.srcs/sources_1/new/bin2sseg.vhd" \
+"../../../../TP1.srcs/sources_1/new/debouncer.vhd" \
+"../../../../TP1.srcs/sources_1/new/disp_mux.vhd" \
+"../../../../TP1.srcs/sources_1/new/quadrature_decoder.vhd" \
+"../../../../TP1.srcs/sources_1/new/up_down_counter.vhd" \
+"../../../../TP1.srcs/sources_1/new/motorcc_cl.vhd" \
+"../../../../TP1.srcs/sim_1/new/tb_1a.vhd" \
+
+# Do not sort compile order
+nosort

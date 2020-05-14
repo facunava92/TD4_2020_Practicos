@@ -27,7 +27,7 @@ entity disp_mux is
 end disp_mux;
 
 architecture arch of disp_mux is
-    -- refreshing rate around 1 kHz (15khz/2^4)
+    -- refreshing rate around 1 kHz (100Mhz/2^17)
     constant N: integer := 19;
     signal q_reg, q_next: unsigned(N-1 downto 0);
     signal sel      : std_logic_vector(1 downto 0);

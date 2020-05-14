@@ -117,9 +117,9 @@ end arch_mealy_stm_v2;
 
 --architecture arch_combinational of quad_decoder is
 --	signal q0, q1	:	std_logic;
---
+
 --begin
---
+
 --	process(clk)
 --	begin
 --		if(rising_edge(clk)) then
@@ -127,10 +127,10 @@ end arch_mealy_stm_v2;
 --			q1 <= B;
 --		end if;
 --	end process;
---
+
 --up <= (not A and not B and q1) or (not A and q1 and not q0) or (A and not q1 and not q0) or (A and B and not q1);
 --down <= (not A and B and not q1) or (not A and not q1 and q0) or (A and q1 and q0) or (A and not B and q1);
---				
+				
 --end arch_combinational;
 
 --architecture arch_mealy_stm of quad_decoder is

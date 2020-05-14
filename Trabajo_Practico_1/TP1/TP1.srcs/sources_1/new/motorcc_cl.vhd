@@ -18,6 +18,8 @@ entity motorcc_cl is
     port(
         clk, reset	:   in 	  std_logic;
         A, B		:   in	  std_logic;
+        sw          :   in    std_logic_vector(12 downto 0);
+        led         :   out   std_logic_vector(12 downto 0);     
         an          :   out   std_logic_vector(3 downto 0);
         sseg        :   out   std_logic_vector(6 downto 0)
     );
@@ -25,12 +27,14 @@ end motorcc_cl;
 
 architecture arch of motorcc_cl is
 	constant	N 		 : 	integer := 13;
+    constant	M 		 : 	integer := 5760;
+	constant	M_n		 : 	integer := -5760;
+
 	signal A_s, B_s		 :	std_logic;
 	signal up_s, down_s	 :	std_logic;
-	signal counter_out_s :  std_logic_vector(N-1 downto 0);
-	signal bcd3_s, bcd2_s, bcd1_s, bcd0_s : std_logic_vector(3 downto 0);
+
 begin	
-	
+	led <= sw;
 	
 	debounce_A : entity work.debouncer(arch)
 		port map(
@@ -60,41 +64,18 @@ begin
 			
 	up_down_ctr: entity work.up_down_counter(arch)
 		generic map(  
-		  N => N   
+		  N => N,
+		  M => M,
+		  M_n => M_n
 		  )
 		port map(
 			clk => clk,
 			reset => reset,
 			up => up_s,
 			down => down_s,
-            counter_out => counter_out_s
-			);
-			
-	bin2bcd: entity work.bin2bcd(arch)
-			generic map(  
-		      N => N   
-		    )
-		port map(
-			clk => clk,
-			reset => reset,
-			bin => counter_out_s,
-            bcd3 => bcd3_s,
-            bcd2 => bcd2_s,
-            bcd1 => bcd1_s,
-            bcd0 => bcd0_s            
-            );
-            
-	ssg_display: entity work.disp_mux(arch)
-
-		port map(
-			clk => clk,
-			reset => reset,
-            bin3 => bcd3_s,
-            bin2 => bcd2_s,
-            bin1 => bcd1_s,
-            bin0 => bcd0_s,
             an => an,
-            sseg => sseg                       
-            );            
+            sseg => sseg
+            );
             		
 end arch;
+
