@@ -15,7 +15,15 @@ set_property PACKAGE_PIN J1 [get_ports {A}]
 #Sch name = JA7
 set_property PACKAGE_PIN H1 [get_ports {B}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {B}]		
-	
+
+#Pmod Header JB
+#Sch name = JB1
+set_property PACKAGE_PIN A14 [get_ports {pwm}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {pwm}]
+#Sch name = JB7
+set_property PACKAGE_PIN A15 [get_ports {pwm_n}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {pwm_n}]	
+		
 #7 segment display
 set_property PACKAGE_PIN W7 [get_ports {sseg[0]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {sseg[0]}]

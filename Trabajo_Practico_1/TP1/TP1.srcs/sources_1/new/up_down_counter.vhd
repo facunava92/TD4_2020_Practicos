@@ -23,11 +23,11 @@ entity up_down_counter is
 		);
 		
 	port(
-			clk, reset      :   in    std_logic;		
-			up, down		:	in 	  std_logic;
-			an   			: 	out   std_logic_vector(3 downto 0);
-			sseg 			: 	out	  std_logic_vector(6 downto 0)
-		);
+			clk, reset      :   in     std_logic;		
+			up, down		:	in 	   std_logic;
+			sseg            :   out    std_logic_vector(6 downto 0);
+			an              :   out    std_logic_vector(3 downto 0)
+        );
 end up_down_counter;
 
 architecture arch of up_down_counter is
@@ -36,7 +36,7 @@ architecture arch of up_down_counter is
     signal 	output_reg	:  signed(N downto 0);
     signal  d3_next, d2_next, d1_next, d0_next	:   unsigned(3 downto 0);	
     signal  d3_reg, d2_reg, d1_reg, d0_reg		:   unsigned(3 downto 0);
-    signal	d3, d2, d1, d0          			:   std_logic_vector(3 downto 0);
+    signal  d3, d2, d1, d0                      :   std_logic_vector(3 downto 0);
 
 begin
 	
@@ -80,7 +80,7 @@ begin
 		d1_next <= d1_reg;
 		d0_next <= d0_reg;
 		if (up='1') then
-		  if (d3_reg=5) and (d2_reg=7) and (d1_reg = 5) and (d0_reg = 9) then
+		  if (d3_reg=5) and (d2_reg=7) and (d1_reg = 5) and (d0_reg = 9) then     -- reset en 5759
 		      d3_next <= "0000";
 		      d2_next <= "0000";		
 		      d1_next <= "0000";
@@ -140,10 +140,11 @@ begin
 
    
    -- output logic
-   d0 <= std_logic_vector(d0_reg);
-   d1 <= std_logic_vector(d1_reg);
-   d2 <= std_logic_vector(d2_reg);
-   d3 <= std_logic_vector(d3_reg);	
+   d0 <= std_logic_vector(d0);
+   d1 <= std_logic_vector(d1);
+   d2 <= std_logic_vector(d2);
+   d3 <= std_logic_vector(d3);	
+
 
 	mux_disp: entity work.disp_mux(arch)
    port map(

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date         : Thu May 14 01:41:30 2020
+| Date         : Thu May 14 21:57:10 2020
 | Host         : Manjaro-Envy running 64-bit Manjaro Linux
 | Command      : report_bus_skew -warn_on_violation -file motorcc_cl_bus_skew_routed.rpt -pb motorcc_cl_bus_skew_routed.pb -rpx motorcc_cl_bus_skew_routed.rpx
 | Design       : motorcc_cl

@@ -7,8 +7,8 @@
 -- Integrantes:
 --      NAVARRO, Facundo		Leg. Nº:63809
 -- Fecha de Entrega: 28/04/2020.
--- Hardware utilizado: Kit-CPLD
--- UCF utilizado: cpld.xdc
+-- Hardware utilizado: Basys3
+-- UCF utilizado: Basys3.xdc
 ----------------------------------------------------------------------------------
 
 library IEEE;
@@ -19,6 +19,7 @@ entity motorcc_cl is
         clk, reset	:   in 	  std_logic;
         A, B		:   in	  std_logic;
         sw          :   in    std_logic_vector(12 downto 0);
+        pwm, pwm_n 	:   out	  std_logic;
         led         :   out   std_logic_vector(12 downto 0);     
         an          :   out   std_logic_vector(3 downto 0);
         sseg        :   out   std_logic_vector(6 downto 0)
@@ -26,15 +27,24 @@ entity motorcc_cl is
 end motorcc_cl;
 
 architecture arch of motorcc_cl is
-	constant	N 		 : 	integer := 13;
+	constant	N 		 : 	integer := 13;    --Log2(M)
     constant	M 		 : 	integer := 5760;
 	constant	M_n		 : 	integer := -5760;
 
 	signal A_s, B_s		 :	std_logic;
 	signal up_s, down_s	 :	std_logic;
+	signal clk_b10_s     :   std_logic;
+	
 
 begin	
 	led <= sw;
+		
+	clock_divider : entity work.clkdiv(arch)
+	   port map(
+	       mclk => clk,
+	       reset => reset,
+	       clk_b10 => clk_b10_s
+	   );
 	
 	debounce_A : entity work.debouncer(arch)
 		port map(
@@ -51,6 +61,7 @@ begin
 			data_in => B,
 			f_data => B_s
 			);
+			 			
 	 
 	quadrature_decoder : entity work.quad_decoder(arch_mealy_stm_v2)
 		port map(
@@ -73,9 +84,18 @@ begin
 			reset => reset,
 			up => up_s,
 			down => down_s,
-            an => an,
-            sseg => sseg
+			sseg  => sseg,
+			an => an
             );
-            		
+            
+    pwm_generator: entity work.pwmg(arch)
+    port map(
+        	clk  => clk_b10_s,
+			reset => reset,	
+			duty  => sw(6 downto 0),
+			pwm  => pwm,
+			pwm_n  => pwm_n
+    );	
+    
 end arch;
 

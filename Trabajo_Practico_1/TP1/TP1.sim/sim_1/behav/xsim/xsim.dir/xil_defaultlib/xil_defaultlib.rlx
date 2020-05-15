@@ -3,9 +3,10 @@
 Dec  5 2019
 04:51:02
 /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sim_1/new/tb_1a.vhd,1589428991,vhdl,,,,tb_1a,,,,,,,,
+/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sim_1/new/tb_mux.vhd,1589482799,vhdl,,,,tb_mux,,,,,,,,
 /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/bin2sseg.vhd,1588620036,vhdl,/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/disp_mux.vhd,,,bin2sseg,,,,,,,,
 /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/debouncer.vhd,1589347195,vhdl,/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/motorcc_cl.vhd,,,debouncer,,,,,,,,
-/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/disp_mux.vhd,1589389151,vhdl,/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/up_down_counter.vhd,,,disp_mux,,,,,,,,
+/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/disp_mux.vhd,1589482701,vhdl,/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sim_1/new/tb_mux.vhd,,,disp_mux,,,,,,,,
 /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/motorcc_cl.vhd,1589411826,vhdl,,,,motorcc_cl,,,,,,,,
 /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/quadrature_decoder.vhd,1589426186,vhdl,/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/motorcc_cl.vhd,,,quad_decoder,,,,,,,,
 /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/up_down_counter.vhd,1589427051,vhdl,/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/motorcc_cl.vhd,,,up_down_counter,,,,,,,,
