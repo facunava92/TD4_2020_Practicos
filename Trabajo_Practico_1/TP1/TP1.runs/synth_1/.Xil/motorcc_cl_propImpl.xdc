@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/constrs_1/new/basys3.xdc rfile:../../../TP1.srcs/constrs_1/new/basys3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/constrs_1/new/basys3.xdc rfile:../../../TP1.srcs/constrs_1/new/basys3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

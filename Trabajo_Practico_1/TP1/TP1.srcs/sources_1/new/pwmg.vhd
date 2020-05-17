@@ -1,8 +1,8 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use ieee.std_logic_unsigned.all;
-
+use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all;
 
 entity pwmg is
     generic (
@@ -10,14 +10,19 @@ entity pwmg is
         period  : integer := 122
         );
     Port (
-        clk, reset  :   in  std_logic;
-        duty        :   in  std_logic_vector(N-1 downto 0);
-        pwm, pwm_n  :   out std_logic
+        clk, reset    :   in  std_logic;
+	    cw, acw       :   in  std_logic;        
+        ref           :   in  std_logic_vector(12 downto 0);
+        position_in   :   in  std_logic_vector(13 downto 0);
+        pwm, pwm_n    :   out std_logic
         );
 end pwmg;
 
 architecture arch of pwmg is
-    signal count : std_logic_vector(N-1 downto 0);
+    signal count : unsigned(N-1 downto 0);
+    signal duty  : unsigned(N-1 downto 0);
+    signal ref_reg, ref_next    :  unsigned(13 downto 0);
+
 
 begin
         
@@ -34,7 +39,7 @@ begin
         end if;        
     end process;
     
-    process(count, duty)
+    process(count, duty, reset)
     begin
         if (reset = '1') then
             pwm <= '0';

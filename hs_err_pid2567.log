@@ -1,0 +1,20 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb6aadb) [0x7fc81230eadb]
+/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(JVM_handle_linux_signal+0xbb) [0x7fc812313e1b]
+/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb647b8) [0x7fc8123087b8]
+/usr/lib/libc.so.6(+0x3bd70) [0x7fc85da31d70]
+/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_filemgmt.so(HDDAFilteredSrcIter::getNext_()+0xfe) [0x7fc8321acfde]
+/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_filemgmt.so(HDDAFilteredSrcIter::next()+0x11) [0x7fc8321ad631]
+/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_filemgmt.so(HADGDesignGraph::addFileSet_(HADAFileSet*, bool)+0x1c5) [0x7fc8322ee475]
+/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_filemgmt.so(HADGDesignGraph::addFileSet(HADAFileSet*)+0x41) [0x7fc8322ee7b1]
+/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_filemgmt.so(HADGDesignGraphMgr::getCurrentGraph(HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType)+0x7a4) [0x7fc832302da4]
+/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_filemgmt.so(std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<HADGDesignGraph*>, std::__future_base::_Result_base::_Deleter>, std::_Bind_simple<std::_Mem_fn<HADGDesignGraph* (HADGDesignGraphMgr::*)(HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType)> (HADGDesignGraphMgr*, HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType)>, HADGDesignGraph*> >::_M_invoke(std::_Any_data const&)+0x44) [0x7fc832303dc4]
+/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_filemgmt.so(+0x402909) [0x7fc8322f6909]
+/usr/lib/libpthread.so.0(+0x1192f) [0x7fc85d9e592f]
+/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_filemgmt.so(std::thread::_State_impl<std::_Bind_simple<std::__future_base::_Async_state_impl<std::_Bind_simple<std::_Mem_fn<HADGDesignGraph* (HADGDesignGraphMgr::*)(HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType)> (HADGDesignGraphMgr*, HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType)>, HADGDesignGraph*>::_Async_state_impl(std::_Bind_simple<std::_Mem_fn<HADGDesignGraph* (HADGDesignGraphMgr::*)(HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType)> (HADGDesignGraphMgr*, HADAFileSet*, HDGUIStatus*, bool, HADGDesignGraphMgr::ResultFidelity, HADGDesignGraphMgr::ObjectiveType)>&&)::{lambda()#1} ()> >::_M_run()+0xba) [0x7fc8323045ea]
+/opt/Xilinx/Vivado/2019.2/lib/lnx64.o/Default/libstdc++.so.6(+0xb8cbf) [0x7fc85dec6cbf]
+/usr/lib/libpthread.so.0(+0x946f) [0x7fc85d9dd46f]
+/usr/lib/libc.so.6(clone+0x43) [0x7fc85daf53d3]

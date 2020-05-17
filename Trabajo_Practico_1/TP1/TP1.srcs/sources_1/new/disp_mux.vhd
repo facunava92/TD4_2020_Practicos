@@ -31,13 +31,13 @@ architecture arch of disp_mux is
     constant N: integer := 19;
     signal q_reg, q_next: unsigned(N-1 downto 0);
     signal sel      : std_logic_vector(1 downto 0);
-    signal bin_s  : std_logic_vector(3 downto 0);
+    signal bin_reg  : std_logic_vector(3 downto 0);
 
 begin
 
     bcd_decoder: entity work.bin2sseg(arch)
         port map(
-            bin => bin_s,
+            bin => bin_reg,
             sseg => sseg        
         );
 
@@ -61,16 +61,16 @@ begin
         case sel is 
             when "00" =>
                 an <= "1110";
-                bin_s <= bin0;
+                bin_reg <= bin0;
             when "01" =>
                 an <= "1101";
-                bin_s <= bin1;
+                bin_reg <= bin1;
             when "10" =>
                 an <= "1011";
-                bin_s <= bin2;                
+                bin_reg <= bin2;                
             when others =>
                 an <= "0111";
-                bin_s <= bin3;
+                bin_reg <= bin3;
         end case;
     end process;             
 end arch;

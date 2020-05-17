@@ -7,8 +7,8 @@
 -- Integrantes:
 --      NAVARRO, Facundo		Leg. Nº:63809
 -- Fecha de Entrega: 28/04/2020.
--- Hardware utilizado: Basys3
--- UCF utilizado: Basys3.xdc
+-- Hardware utilizado: Kit-CPLD
+-- UCF utilizado: cpld.xdc
 ----------------------------------------------------------------------------------
 
 library IEEE;
@@ -17,9 +17,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity motorcc_cl is
     port(
         clk, reset	:   in 	  std_logic;
+        cw, acw     :   in    std_logic;
         A, B		:   in	  std_logic;
         sw          :   in    std_logic_vector(12 downto 0);
-        pwm, pwm_n 	:   out	  std_logic;
+        pwm, pwm_n 	:   out	  std_logic;        
         led         :   out   std_logic_vector(12 downto 0);     
         an          :   out   std_logic_vector(3 downto 0);
         sseg        :   out   std_logic_vector(6 downto 0)
@@ -27,18 +28,18 @@ entity motorcc_cl is
 end motorcc_cl;
 
 architecture arch of motorcc_cl is
-	constant	N 		 : 	integer := 13;    --Log2(M)
+	constant	N 		 : 	integer := 13;
     constant	M 		 : 	integer := 5760;
 	constant	M_n		 : 	integer := -5760;
 
 	signal A_s, B_s		 :	std_logic;
 	signal up_s, down_s	 :	std_logic;
-	signal clk_b10_s     :   std_logic;
-	
+	signal clk_b10_s     :  std_logic;	
+	signal count_out_s   :  std_logic_vector(N downto 0);
 
 begin	
 	led <= sw;
-		
+	
 	clock_divider : entity work.clkdiv(arch)
 	   port map(
 	       mclk => clk,
@@ -61,7 +62,6 @@ begin
 			data_in => B,
 			f_data => B_s
 			);
-			 			
 	 
 	quadrature_decoder : entity work.quad_decoder(arch_mealy_stm_v2)
 		port map(
@@ -84,18 +84,21 @@ begin
 			reset => reset,
 			up => up_s,
 			down => down_s,
-			sseg  => sseg,
-			an => an
+            an => an,
+            sseg => sseg,
+            count_out => count_out_s
             );
             
     pwm_generator: entity work.pwmg(arch)
     port map(
         	clk  => clk_b10_s,
 			reset => reset,	
-			duty  => sw(6 downto 0),
+			ref  => sw,			
 			pwm  => pwm,
-			pwm_n  => pwm_n
-    );	
-    
+			pwm_n  => pwm_n,
+		    cw => cw,
+		    acw => acw, 
+			position_in => count_out_s
+    );	            
+            		
 end arch;
-

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date             : Thu May 14 21:57:10 2020
+| Date             : Fri May 15 19:34:14 2020
 | Host             : Manjaro-Envy running 64-bit Manjaro Linux
 | Command          : report_power -file motorcc_cl_power_routed.rpt -pb motorcc_cl_power_summary_routed.pb -rpx motorcc_cl_power_routed.rpx
 | Design           : motorcc_cl
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.087        |
+| Total On-Chip Power (W)  | 0.096        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.016        |
+| Dynamic (W)              | 0.024        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       80 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       18 |     20800 |            0.09 |
+| Slice Logic    |    <0.001 |      176 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       63 |     20800 |            0.30 |
+|   Register     |    <0.001 |       67 |     41600 |            0.16 |
 |   CARRY4       |    <0.001 |        9 |      8150 |            0.11 |
-|   Register     |    <0.001 |       37 |     41600 |            0.09 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |       68 |       --- |             --- |
-| I/O            |     0.015 |       41 |       106 |           38.68 |
+|   Others       |     0.000 |       11 |       --- |             --- |
+| Signals        |    <0.001 |      145 |       --- |             --- |
+| I/O            |     0.022 |       43 |       106 |           40.57 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.087 |          |           |                 |
+| Total          |     0.096 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 | Unspecified | NA         |
+| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
@@ -140,7 +140,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| motorcc_cl |     0.016 |
+| motorcc_cl |     0.024 |
 +------------+-----------+
 
 

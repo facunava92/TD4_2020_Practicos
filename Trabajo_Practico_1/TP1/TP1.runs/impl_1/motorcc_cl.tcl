@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -70,7 +71,7 @@ set rc [catch {
   set_param chipscope.maxJobs 2
   set_param xicom.use_bs_reader 1
   open_checkpoint motorcc_cl_routed.dcp
-  set_property webtalk.parent_dir /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.cache/wt [current_project]
   catch { write_mem_info -force motorcc_cl.mmi }
   write_bitstream -force motorcc_cl.bit 
   catch {write_debug_probes -quiet -force motorcc_cl}
