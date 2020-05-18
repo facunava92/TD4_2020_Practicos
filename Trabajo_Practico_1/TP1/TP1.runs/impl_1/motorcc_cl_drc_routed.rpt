@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date         : Fri May 15 19:34:11 2020
+| Date         : Mon May 18 04:10:46 2020
 | Host         : Manjaro-Envy running 64-bit Manjaro Linux
 | Command      : report_drc -file motorcc_cl_drc_routed.rpt -pb motorcc_cl_drc_routed.pb -rpx motorcc_cl_drc_routed.rpx
 | Design       : motorcc_cl

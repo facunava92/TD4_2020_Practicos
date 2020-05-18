@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date         : Fri May 15 19:33:41 2020
+| Date         : Mon May 18 04:10:26 2020
 | Host         : Manjaro-Envy running 64-bit Manjaro Linux
 | Command      : report_control_sets -verbose -file motorcc_cl_control_sets_placed.rpt
 | Design       : motorcc_cl
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     7 |
-|    Minimum number of control sets                        |     7 |
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    29 |
+| Unused register locations in slices containing registers |    43 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     7 |
-| >= 0 to < 4        |     1 |
-| >= 4 to < 6        |     4 |
-| >= 6 to < 8        |     1 |
+| Total control sets |     8 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     1 |
+| >= 16              |     3 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               2 |            1 |
-| No           | No                    | Yes                    |              49 |           13 |
+| No           | No                    | No                     |               4 |            3 |
+| No           | No                    | Yes                    |              91 |           31 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              16 |            9 |
+| Yes          | No                    | Yes                    |              30 |           13 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,13 +73,14 @@ Table of Contents
 +-------------------------------------------+-------------------------------+------------------+------------------+----------------+
 |                Clock Signal               |         Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +-------------------------------------------+-------------------------------+------------------+------------------+----------------+
+|  q_reg[10]                                |                               |                  |                2 |              2 |
 |  quadrature_decoder/up_inferred__3/i__n_0 |                               |                  |                1 |              2 |
-|  clk_IBUF_BUFG                            | up_down_ctr/d1_reg[3]_i_1_n_0 | reset_IBUF       |                3 |              4 |
-|  clk_IBUF_BUFG                            | up_down_ctr/d2_reg[3]_i_1_n_0 | reset_IBUF       |                2 |              4 |
+|  clk_IBUF_BUFG                            | up_down_ctr/d1_reg[3]_i_1_n_0 | reset_IBUF       |                2 |              4 |
+|  clk_IBUF_BUFG                            | up_down_ctr/d2_reg[3]_i_1_n_0 | reset_IBUF       |                1 |              4 |
 |  clk_IBUF_BUFG                            | up_down_ctr/d3_reg[3]_i_1_n_0 | reset_IBUF       |                3 |              4 |
-|  clk_IBUF_BUFG                            | quadrature_decoder/E[0]       | reset_IBUF       |                1 |              4 |
-|  clock_divider/q_reg[10]_0                |                               | reset_IBUF       |                2 |              7 |
-|  clk_IBUF_BUFG                            |                               | reset_IBUF       |               11 |             42 |
+|  clk_IBUF_BUFG                            | quadrature_decoder/d0_next    | reset_IBUF       |                7 |             18 |
+|  clk_IBUF_BUFG                            |                               | reset_IBUF       |               12 |             42 |
+|  q_reg[10]                                |                               | reset_IBUF       |               19 |             49 |
 +-------------------------------------------+-------------------------------+------------------+------------------+----------------+
 
 

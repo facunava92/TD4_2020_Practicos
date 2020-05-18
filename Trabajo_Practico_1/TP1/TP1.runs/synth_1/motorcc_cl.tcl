@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7a35tcpg236-1
@@ -27,8 +24,8 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.cache/wt [current_project]
-set_property parent.project_path /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.xpr [current_project]
+set_property webtalk.parent_dir /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.cache/wt [current_project]
+set_property parent.project_path /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {/home/fnavarro/.Xilinx/Vivado/2019.2/xhub/board_store} [current_project]
@@ -36,14 +33,14 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/bin2sseg.vhd
-  /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/clkdiv.vhd
-  /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/debouncer.vhd
-  /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/disp_mux.vhd
-  /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/quadrature_decoder.vhd
-  /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/up_down_counter.vhd
-  /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/pwmg.vhd
-  /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/motorcc_cl.vhd
+  /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/bin2sseg.vhd
+  /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/clkdiv.vhd
+  /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/debouncer.vhd
+  /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/disp_mux.vhd
+  /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/quadrature_decoder.vhd
+  /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/up_down_counter.vhd
+  /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/pwmg.vhd
+  /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/sources_1/new/motorcc_cl.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -53,8 +50,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/constrs_1/new/basys3.xdc
-set_property used_in_implementation false [get_files /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.srcs/constrs_1/new/basys3.xdc]
+read_xdc /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/constrs_1/new/basys3.xdc
+set_property used_in_implementation false [get_files /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.srcs/constrs_1/new/basys3.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

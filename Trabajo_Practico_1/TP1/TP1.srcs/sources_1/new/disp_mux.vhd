@@ -5,10 +5,8 @@
 -- Año: 2020.
 -- Grupo: 5
 -- Integrantes:
---      NAVARRO, Facundo
---      Leg. Nº:63809
---
--- Fecha de Entrega: 20/04/2020.
+--      NAVARRO, Facundo		Leg. Nº:63809
+-- Fecha de Entrega: 17/05/2020.
 -- Hardware utilizado: Basys3
 -- UCF utilizado: basys3.xdc
 ----------------------------------------------------------------------------------
@@ -54,7 +52,7 @@ begin
     -- contador latcheado
     q_next <= q_reg + 1;
     
-    -- 2MSBs controlar el multipleado de los 4 display, en este caso solo se usa uno, no haria falta otro bit
+    -- 2MSBs controlar el multipleado de los 4 display
     sel <= std_logic_vector(q_reg(N-1 downto N-2));
     process(sel, bin0, bin1, bin2, bin3)
     begin

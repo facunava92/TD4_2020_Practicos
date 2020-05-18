@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date             : Fri May 15 19:34:14 2020
+| Date             : Mon May 18 04:10:48 2020
 | Host             : Manjaro-Envy running 64-bit Manjaro Linux
 | Command          : report_power -file motorcc_cl_power_routed.rpt -pb motorcc_cl_power_summary_routed.pb -rpx motorcc_cl_power_routed.rpx
 | Design           : motorcc_cl
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.096        |
+| Total On-Chip Power (W)  | 0.099        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.024        |
+| Dynamic (W)              | 0.027        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,15 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      176 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       63 |     20800 |            0.30 |
-|   Register     |    <0.001 |       67 |     41600 |            0.16 |
-|   CARRY4       |    <0.001 |        9 |      8150 |            0.11 |
-|   Others       |     0.000 |       11 |       --- |             --- |
-| Signals        |    <0.001 |      145 |       --- |             --- |
-| I/O            |     0.022 |       43 |       106 |           40.57 |
+| Slice Logic    |    <0.001 |      390 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      147 |     20800 |            0.71 |
+|   CARRY4       |    <0.001 |       29 |      8150 |            0.36 |
+|   Register     |    <0.001 |      125 |     41600 |            0.30 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |       12 |       --- |             --- |
+| Signals        |    <0.001 |      248 |       --- |             --- |
+| I/O            |     0.025 |       45 |       106 |           42.45 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.096 |          |           |                 |
+| Total          |     0.099 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 | Unspecified | NA         |
+| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
@@ -94,7 +95,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -137,10 +138,11 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------+-----------+
-| Name       | Power (W) |
-+------------+-----------+
-| motorcc_cl |     0.024 |
-+------------+-----------+
++-----------------+-----------+
+| Name            | Power (W) |
++-----------------+-----------+
+| motorcc_cl      |     0.027 |
+|   pwm_generator |     0.001 |
++-----------------+-----------+
 
 

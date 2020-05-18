@@ -1,6 +1,10 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.sim/sim_1/impl/timing/xsim/tb_1a_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module debouncer_0
 INFO: [VRFC 10-311] analyzing module disp_mux
 INFO: [VRFC 10-311] analyzing module motorcc_cl
+INFO: [VRFC 10-311] analyzing module pwmg
 INFO: [VRFC 10-311] analyzing module quad_decoder
 INFO: [VRFC 10-311] analyzing module up_down_counter
 INFO: [VRFC 10-311] analyzing module glbl

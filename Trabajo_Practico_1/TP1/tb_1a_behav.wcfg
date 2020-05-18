@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="971368128333fs"></ZoomStartTime>
-      <ZoomEndTime time="1116768128334fs"></ZoomEndTime>
-      <Cursor1Time time="1003468128333fs"></Cursor1Time>
+      <ZoomStartTime time="2836178091469fs"></ZoomStartTime>
+      <ZoomEndTime time="2928928091470fs"></ZoomEndTime>
+      <Cursor1Time time="2880954838976fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="119"></NameColumnWidth>
-      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+      <NameColumnWidth column_width="164"></NameColumnWidth>
+      <ValueColumnWidth column_width="133"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
+   <WVObjectSize size="14" />
    <wvobject type="logic" fp_name="/tb_1a/reset">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
@@ -27,13 +27,13 @@
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_1a/A">
-      <obj_property name="ElementShortName">A</obj_property>
-      <obj_property name="ObjectShortName">A</obj_property>
+   <wvobject type="logic" fp_name="/tb_1a/a">
+      <obj_property name="ElementShortName">a</obj_property>
+      <obj_property name="ObjectShortName">a</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_1a/B">
-      <obj_property name="ElementShortName">B</obj_property>
-      <obj_property name="ObjectShortName">B</obj_property>
+   <wvobject type="logic" fp_name="/tb_1a/b">
+      <obj_property name="ElementShortName">b</obj_property>
+      <obj_property name="ObjectShortName">b</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/tb_1a/uut/up_s">
       <obj_property name="ElementShortName">up_s</obj_property>
@@ -42,11 +42,6 @@
    <wvobject type="logic" fp_name="/tb_1a/uut/down_s">
       <obj_property name="ElementShortName">down_s</obj_property>
       <obj_property name="ObjectShortName">down_s</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_1a/uut/up_down_ctr/r_reg">
-      <obj_property name="ElementShortName">r_reg[13:0]</obj_property>
-      <obj_property name="ObjectShortName">r_reg[13:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_1a/uut/up_down_ctr/d3">
       <obj_property name="ElementShortName">d3[3:0]</obj_property>
@@ -63,5 +58,23 @@
    <wvobject type="array" fp_name="/tb_1a/uut/up_down_ctr/d0">
       <obj_property name="ElementShortName">d0[3:0]</obj_property>
       <obj_property name="ObjectShortName">d0[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_1a/uut/pwm_generator/pos">
+      <obj_property name="ElementShortName">pos[13:0]</obj_property>
+      <obj_property name="ObjectShortName">pos[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_1a/uut/pwm_generator/duty">
+      <obj_property name="ElementShortName">duty[6:0]</obj_property>
+      <obj_property name="ObjectShortName">duty[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_1a/pwm">
+      <obj_property name="ElementShortName">pwm</obj_property>
+      <obj_property name="ObjectShortName">pwm</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_1a/pwm_n">
+      <obj_property name="ElementShortName">pwm_n</obj_property>
+      <obj_property name="ObjectShortName">pwm_n</obj_property>
    </wvobject>
 </wave_config>

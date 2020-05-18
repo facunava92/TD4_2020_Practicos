@@ -2,11 +2,11 @@
 # Vivado v2019.2.1 (64-bit)
 # SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
 # IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
-# Start of session at: Fri May 15 19:30:35 2020
-# Process ID: 60757
-# Current directory: /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.runs/synth_1
+# Start of session at: Mon May 18 04:07:18 2020
+# Process ID: 182600
+# Current directory: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.runs/synth_1
 # Command line: vivado -log motorcc_cl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source motorcc_cl.tcl
-# Log file: /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.runs/synth_1/motorcc_cl.vds
-# Journal file: /home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.runs/synth_1/vivado.jou
+# Log file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.runs/synth_1/motorcc_cl.vds
+# Journal file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source motorcc_cl.tcl -notrace

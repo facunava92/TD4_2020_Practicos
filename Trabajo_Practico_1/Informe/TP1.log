@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.26)  29 APR 2020 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  18 MAY 2020 04:02
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **TP1.tex
 (./TP1.tex
@@ -21,48 +22,38 @@ File: size11.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
-(/usr/share/texmf-dist/tex/latex/ucs/utf8x.def
+ (/usr/share/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-))
-(/usr/share/texmf-dist/tex/latex/ucs/ucs.sty
+)) (/usr/share/texmf-dist/tex/latex/ucs/ucs.sty
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
-
-(/usr/share/texmf-dist/tex/latex/ucs/data/uni-global.def
+ (/usr/share/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
 \uc@secondtry=\count88
 \uc@combtoks=\toks16
 \uc@combtoksb=\toks17
 \uc@temptokena=\toks18
-)
-(/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
+) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count89
-)
-(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2019/10/15 3.35 The Babel package
-
-(/usr/share/texmf-dist/tex/generic/babel/switch.def
+ (/usr/share/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2019/10/15 3.35 Babel switching mechanism
-)
-(/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+) (/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
-
-(/usr/share/texmf-dist/tex/generic/babel/babel.def
+ (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2019/10/15 3.35 Babel common definitions
 \babel@savecnt=\count90
 \U@D=\dimen103
-
-(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count91
 )
 \es@quottoks=\toks19
@@ -71,8 +62,7 @@ Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
-))
-(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+)) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitkv@toks@=\toks20
 \labelindent=\skip45
@@ -81,47 +71,36 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box27
 \enit@count@id=\count93
 \enitdp@description=\count94
-)
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
-)
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen105
 \Gin@req@width=\dimen106
-)
-(/usr/share/texmf-dist/tex/latex/float/float.sty
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count95
 \float@exts=\toks23
 \float@box=\box28
 \@float@everytoks=\toks24
 \@floatcapt=\box29
-)
-(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
-
-(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-
-
-(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -135,15 +114,13 @@ Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
-)
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
-)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
@@ -156,26 +133,21 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-)
-(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen107
 \Hy@linkcounter=\count96
 \Hy@pagecounter=\count97
-
-(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count98
-
-(/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+ (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4540.
@@ -186,8 +158,7 @@ Package hyperref Info: Backreferencing OFF on input line 4560.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4793.
 \c@Hy@tempcnt=\count99
-
-(/usr/share/texmf-dist/tex/latex/url/url.sty
+ (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -210,41 +181,33 @@ LaTeX Info: Redefining \pageref on input line 6497.
 \c@Hfootnote=\count103
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
-(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+ (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
 \Fld@listcount=\count104
 \c@bookmark@seq@number=\count105
-
-(/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+ (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
 \Hy@SectionHShift=\skip46
-)
-(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count106
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2019/04/01 v2.17c AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks25
 \ex@=\dimen111
-))
-(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen112
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count107
@@ -284,19 +247,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2855.
 LaTeX Info: Redefining \] on input line 2856.
-)
-(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/share/texmf-dist/tex/latex/tools/array.sty
+)) (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen120
 \ar@mcellbox=\box32
@@ -305,13 +265,10 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \extratabsurround=\skip50
 \backup@length=\skip51
 \ar@cellbox=\box33
-)
-(/usr/share/texmf-dist/tex/latex/was/gensymb.sty
+) (/usr/share/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
-)
-(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
+) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@headwidth=\skip52
 \f@nch@O@elh=\skip53
 \f@nch@O@erh=\skip54
@@ -321,16 +278,13 @@ s
 \f@nch@O@erf=\skip58
 \f@nch@O@olf=\skip59
 \f@nch@O@orf=\skip60
-)
-(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-(/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
+ (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 \everycr=\toks31
 \minrowclearance=\skip61
@@ -345,8 +299,7 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
 \Gm@cnth=\count120
 \Gm@cntv=\count121
@@ -368,6 +321,10 @@ Package geometry Warning: Over-specification in `h'-direction.
 (./TP1.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
+
+
+LaTeX Warning: Label `fig:cont_up' multiply defined.
+
 )
 \openout1 = `TP1.aux'.
 
@@ -390,8 +347,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 LaTeX Info: Redefining \. on input line 41.
 LaTeX Info: Redefining \% on input line 41.
-
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count123
 \scratchdimen=\dimen130
@@ -406,28 +362,21 @@ LaTeX Info: Redefining \% on input line 41.
 \everyMPtoPDFconversion=\toks34
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+ (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box35
 Package hyperref Info: Link coloring OFF on input line 41.
-
-(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
-
-(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+ (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
@@ -435,14 +384,12 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 41.
 LaTeX Info: Redefining \pageref on input line 41.
 LaTeX Info: Redefining \nameref on input line 41.
- (./TP1.out)
-(./TP1.out)
+ (./TP1.out) (./TP1.out)
 \@outlinefile=\write3
 \openout3 = `TP1.out'.
 
 LaTeX Info: Redefining \celsius on input line 41.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 41.
-
 
 
 Package gensymb Warning: Not defining \perthousand.
@@ -486,7 +433,7 @@ Package gensymb Warning: Not defining \micro.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Imagenes/LOGO.jpg, id=56, 295.1025pt x 302.12875pt>
+<Imagenes/LOGO.jpg, id=76, 295.1025pt x 302.12875pt>
 File: Imagenes/LOGO.jpg Graphic file (type jpg)
 <use Imagenes/LOGO.jpg>
 Package pdftex.def Info: Imagenes/LOGO.jpg  used on input line 44.
@@ -495,20 +442,15 @@ Package pdftex.def Info: Imagenes/LOGO.jpg  used on input line 44.
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
-
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
-
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imagenes/LOGO.jpg>] (./T
-P1.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imagenes/LOGO.jpg>] (./TP1.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -522,72 +464,166 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 \clearpage
+l.73 \clearpage
                 [1]
-<Imagenes/encoder_absoluto.jpg, id=103, 858.20625pt x 356.33125pt>
+<Imagenes/encoder_absoluto.jpg, id=133, 858.20625pt x 356.33125pt>
 File: Imagenes/encoder_absoluto.jpg Graphic file (type jpg)
 <use Imagenes/encoder_absoluto.jpg>
-Package pdftex.def Info: Imagenes/encoder_absoluto.jpg  used on input line 94.
+Package pdftex.def Info: Imagenes/encoder_absoluto.jpg  used on input line 93.
 (pdftex.def)             Requested size: 409.72125pt x 170.11816pt.
  [2
 
  <./Imagenes/encoder_absoluto.jpg>]
-<Imagenes/encoder_incremental.jpg, id=109, 846.16125pt x 294.09875pt>
+<Imagenes/encoder_incremental.jpg, id=139, 846.16125pt x 294.09875pt>
 File: Imagenes/encoder_incremental.jpg Graphic file (type jpg)
 <use Imagenes/encoder_incremental.jpg>
-Package pdftex.def Info: Imagenes/encoder_incremental.jpg  used on input line 1
-08.
+Package pdftex.def Info: Imagenes/encoder_incremental.jpg  used on input line 107.
 (pdftex.def)             Requested size: 409.72125pt x 142.40436pt.
-<Imagenes/encoder_cuadratura.jpg, id=111, 1240.635pt x 341.275pt>
+<Imagenes/encoder_cuadratura.jpg, id=141, 1240.635pt x 341.275pt>
 File: Imagenes/encoder_cuadratura.jpg Graphic file (type jpg)
 <use Imagenes/encoder_cuadratura.jpg>
-Package pdftex.def Info: Imagenes/encoder_cuadratura.jpg  used on input line 11
-9.
+Package pdftex.def Info: Imagenes/encoder_cuadratura.jpg  used on input line 118.
 (pdftex.def)             Requested size: 409.72125pt x 112.7044pt.
  [3 <./Imagenes/encoder_incremental.jpg> <./Imagenes/encoder_cuadratura.jpg>]
-<Imagenes/mealy.jpg, id=119, 1153.30875pt x 863.225pt>
+<Imagenes/estructura.png, id=149, 766.865pt x 456.70625pt>
+File: Imagenes/estructura.png Graphic file (type png)
+<use Imagenes/estructura.png>
+Package pdftex.def Info: Imagenes/estructura.png  used on input line 131.
+(pdftex.def)             Requested size: 358.50317pt x 213.50908pt.
+<Imagenes/debouncer.png, id=150, 815.045pt x 294.09875pt>
+File: Imagenes/debouncer.png Graphic file (type png)
+<use Imagenes/debouncer.png>
+Package pdftex.def Info: Imagenes/debouncer.png  used on input line 141.
+(pdftex.def)             Requested size: 256.07481pt x 92.39926pt.
+<Imagenes/A_B.png, id=152, 485.815pt x 283.0575pt>
+File: Imagenes/A_B.png Graphic file (type png)
+<use Imagenes/A_B.png>
+Package pdftex.def Info: Imagenes/A_B.png  used on input line 150.
+(pdftex.def)             Requested size: 256.07481pt x 149.19911pt.
+ [4
+
+ <./Imagenes/estructura.png> <./Imagenes/debouncer.png> <./Imagenes/A_B.png>]
+./TP1.tex:159: Undefined control sequence.
+l.159 ...} = \frac{100Mhz}{2^{17}} \approx 800 \Hz
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<Imagenes/mux.png, id=161, 523.9575pt x 317.185pt>
+File: Imagenes/mux.png Graphic file (type png)
+<use Imagenes/mux.png>
+Package pdftex.def Info: Imagenes/mux.png  used on input line 165.
+(pdftex.def)             Requested size: 256.07481pt x 155.0203pt.
+<Imagenes/mealy.jpg, id=162, 1153.30875pt x 863.225pt>
 File: Imagenes/mealy.jpg Graphic file (type jpg)
 <use Imagenes/mealy.jpg>
-Package pdftex.def Info: Imagenes/mealy.jpg  used on input line 139.
-(pdftex.def)             Requested size: 409.72125pt x 306.66435pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
- [4 <./Imagenes/mealy.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+Package pdftex.def Info: Imagenes/mealy.jpg  used on input line 175.
+(pdftex.def)             Requested size: 307.2929pt x 230.00485pt.
+[5 <./Imagenes/mux.png> <./Imagenes/mealy.jpg>]
+<Imagenes/tb_mealy.png, id=172, 1371.1225pt x 294.09875pt>
+File: Imagenes/tb_mealy.png Graphic file (type png)
+<use Imagenes/tb_mealy.png>
+Package pdftex.def Info: Imagenes/tb_mealy.png  used on input line 184.
+(pdftex.def)             Requested size: 512.14963pt x 109.85594pt.
+<Imagenes/encoder_real.jpeg, id=174, 1284.8pt x 963.6pt>
+File: Imagenes/encoder_real.jpeg Graphic file (type jpg)
+<use Imagenes/encoder_real.jpeg>
+Package pdftex.def Info: Imagenes/encoder_real.jpeg  used on input line 194.
+(pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
+
+./TP1.tex:199: Undefined control sequence.
+l.199 ...o si la señal es \textit{up} o \textdown
+                                                  {down}, el valor de contad...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<Imagenes/mod5760.png, id=176, 913.4125pt x 87.32625pt>
+File: Imagenes/mod5760.png Graphic file (type png)
+<use Imagenes/mod5760.png>
+Package pdftex.def Info: Imagenes/mod5760.png  used on input line 203.
+(pdftex.def)             Requested size: 512.14963pt x 48.96498pt.
+<Imagenes/updown.png, id=177, 313.4109pt x 134.6631pt>
+File: Imagenes/updown.png Graphic file (type png)
+<use Imagenes/updown.png>
+Package pdftex.def Info: Imagenes/updown.png  used on input line 212.
+(pdftex.def)             Requested size: 409.72125pt x 176.04625pt.
+[6 <./Imagenes/tb_mealy.png> <./Imagenes/encoder_real.jpeg> <./Imagenes/mod5760.png>]
+<Imagenes/clk_div.png, id=189, 458.71375pt x 405.515pt>
+File: Imagenes/clk_div.png Graphic file (type png)
+<use Imagenes/clk_div.png>
+Package pdftex.def Info: Imagenes/clk_div.png  used on input line 239.
+(pdftex.def)             Requested size: 256.07481pt x 226.38763pt.
+ [7 <./Imagenes/updown.png>]
+<Imagenes/pwm_400.png, id=197, 484.81125pt x 604.2575pt>
+File: Imagenes/pwm_400.png Graphic file (type png)
+<use Imagenes/pwm_400.png>
+Package pdftex.def Info: Imagenes/pwm_400.png  used on input line 251.
+(pdftex.def)             Requested size: 256.07481pt x 319.17618pt.
+<Imagenes/func_pwm.png, id=198, 660.4675pt x 373.395pt>
+File: Imagenes/func_pwm.png Graphic file (type png)
+<use Imagenes/func_pwm.png>
+Package pdftex.def Info: Imagenes/func_pwm.png  used on input line 260.
+(pdftex.def)             Requested size: 256.07481pt x 144.77452pt.
+ [8 <./Imagenes/clk_div.png> <./Imagenes/pwm_400.png>]
+<Imagenes/sim_impl_120.png, id=206, 2174.1225pt x 420.57124pt>
+File: Imagenes/sim_impl_120.png Graphic file (type png)
+<use Imagenes/sim_impl_120.png>
+Package pdftex.def Info: Imagenes/sim_impl_120.png  used on input line 270.
+(pdftex.def)             Requested size: 512.14963pt x 99.0717pt.
+File: Imagenes/sim_impl_120.png Graphic file (type png)
+<use Imagenes/sim_impl_120.png>
+Package pdftex.def Info: Imagenes/sim_impl_120.png  used on input line 277.
+(pdftex.def)             Requested size: 512.14963pt x 99.0717pt.
+<Imagenes/sim_up.png, id=207, 2167.09625pt x 474.77374pt>
+File: Imagenes/sim_up.png Graphic file (type png)
+<use Imagenes/sim_up.png>
+Package pdftex.def Info: Imagenes/sim_up.png  used on input line 284.
+(pdftex.def)             Requested size: 512.14963pt x 112.2021pt.
+<Imagenes/sim_down.png, id=208, 2171.11125pt x 462.72874pt>
+File: Imagenes/sim_down.png Graphic file (type png)
+<use Imagenes/sim_down.png>
+Package pdftex.def Info: Imagenes/sim_down.png  used on input line 291.
+(pdftex.def)             Requested size: 512.14963pt x 109.15079pt.
+ [9 <./Imagenes/func_pwm.png> <./Imagenes/sim_impl_120.png> <./Imagenes/sim_up.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+ [10 <./Imagenes/sim_down.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
  (./TP1.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `TP1.out' has not changed.
-(rerunfilecheck)             Checksum: D757369CA74AAFBF34DCB0C8E23D7694;1087.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+(rerunfilecheck)             Checksum: 26CAE583F1107227DA703EF2B75C99C0;1295.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
- 10089 strings out of 492167
- 138408 string characters out of 6131558
- 268114 words of memory out of 5000000
- 14298 multiletter control sequences out of 15000+600000
- 13010 words of font info for 50 fonts, out of 8000000 for 9000
+ 10246 strings out of 492167
+ 141262 string characters out of 6131559
+ 268938 words of memory out of 5000000
+ 14408 multiletter control sequences out of 15000+600000
+ 13524 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,12n,45p,884b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb>
-Output written on TP1.pdf (5 pages, 491607 bytes).
+ 31i,13n,45p,884b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on TP1.pdf (11 pages, 943693 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 240 words of extra memory for PDF output out of 10000 (max. 10000000)
 

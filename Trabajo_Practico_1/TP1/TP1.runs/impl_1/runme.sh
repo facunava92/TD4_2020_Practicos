@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/fnavarro/TD4_2020_Practicos/Trabajo_Practico_1/TP1/TP1.runs/impl_1'
+HD_PWD='/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_1/TP1/TP1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

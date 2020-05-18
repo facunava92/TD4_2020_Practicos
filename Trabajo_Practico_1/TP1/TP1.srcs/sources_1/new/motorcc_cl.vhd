@@ -17,11 +17,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity motorcc_cl is
     port(
         clk, reset	:   in 	  std_logic;
-        cw, acw     :   in    std_logic;
         A, B		:   in	  std_logic;
-        sw          :   in    std_logic_vector(12 downto 0);
+        sw          :   in    std_logic_vector(13 downto 0);
         pwm, pwm_n 	:   out	  std_logic;        
-        led         :   out   std_logic_vector(12 downto 0);     
+        led         :   out   std_logic_vector(13 downto 0);     
         an          :   out   std_logic_vector(3 downto 0);
         sseg        :   out   std_logic_vector(6 downto 0)
     );
@@ -90,15 +89,16 @@ begin
             );
             
     pwm_generator: entity work.pwmg(arch)
+		generic map(  
+		  N => N
+		  )    
     port map(
         	clk  => clk_b10_s,
 			reset => reset,	
 			ref  => sw,			
 			pwm  => pwm,
 			pwm_n  => pwm_n,
-		    cw => cw,
-		    acw => acw, 
-			position_in => count_out_s
+			pos => count_out_s
     );	            
             		
 end arch;

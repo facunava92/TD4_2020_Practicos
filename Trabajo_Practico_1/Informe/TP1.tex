@@ -50,7 +50,6 @@
  	\vspace{1.5cm}
 
 	\begin{tabular}{ll}
-		Della Santina, Lucas	&	66876 \\
 		Navarro, Facundo		&	63809 	
 	\end{tabular}
 	
@@ -121,29 +120,182 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 	\label{fig:encoder_cuadratura}
 \end{figure} 
 
+\clearpage
 \section{Desarrollo}
 
-	\subsection{Decodificador de encoder visualizando en cuatro display de 7 segmentos}
-	Realizar la descripción de divisores de frecuencia para el barrido de los displays a una frecuencia de 1kHz, utilizando una clock de 15 kHz. Describir un contador decimal de 000 a 999. Incorporar el concepto de descripción jerárquico utilizando instanciación de componentes.
-	Con una descripción de máquina de estado realizar la decodificación de los flancos de las señales A y B del encoder y transofromarlas en pulsos Up/Down según el sentido de giro.
+	\subsection{Estructura del proyecto}
+	El proyecto fue desarrollado en el SW Vivado 2019.2.1, ya que se utilizo la plataforma Basys3.
 
-		\subsubsection{Divisor de frecuencia y multiplexado de displays}
-			A partir de la frecuencia de entrada $f_1$ en 15 kHz, se pretende utilizar para realizar el multiplexado de los 3 displays necesarios para visualizar la cuenta hasta 999, como el ojo no es capaz de percibir el encendido y apagado a alta velocidad, fenómeno conocido como persistencia de la visión, engañando a la espectador en creer que el los displays se encuentran encendido en simultaneo. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{Imagenes/estructura.png}
+		\caption{Arbol del proyecto}
+		\label{fig:proyecto_vivado}
+	\end{figure} 
 
-		\subsubsection{Contador 0 - 999}
-		
-		\subsubsection{Decodificador de cuadratura}
-	
-		\begin{figure}[h]
+	\subsection{Debouncer}
+	Siempre existe la posibilidad de ruido externo que se puede filtrar dentro de la señal, en este caso se plantea un filtro digital a través de un registro, el cual podria ser parametrizado en caso que se requiera un mayor tiempo para estabilizar la señal.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{Imagenes/debouncer.png}
+		\caption{Estructura de filtro digital.}
+		\label{fig:debouncer}
+	\end{figure} 
+
+	El filtro se utiliza sobre las señales que provienen del encoder, A y B como se aprecia en la imagen \textcolor{blue}{\textbf{\ref{fig:A_B}}}.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{Imagenes/A_B.png}
+		\caption{Señales filtradas A y B.}
+		\label{fig:A_B}
+	\end{figure} 
+
+
+		\subsection{Divisor de frecuencia y multiplexado de displays}
+			A partir de la frecuencia de la placa $f_1$ en 100 MHz, se pretende utilizar para realizar el multiplexado de los 4 displays necesarios para visualizar la cuenta hasta 5759, como el ojo no es capaz de percibir el encendido y apagado a alta velocidad, fenómeno conocido como persistencia de la visión, engañando al espectador en creer que el los displays se encuentran encendido en simultáneo.
+		\begin{equation}
+			f_{mux} = \frac{f_{in}}{2^n} = \frac{100Mhz}{2^{17}} \approx 800 \Hz
+		\end{equation}
+
+			Con la frecuencia de 100 Mhz, es necesario un registro de 19 bits de longitud, con los 2 MSB se multiplexa la salida de los display a una velocidad de 800 Hz.
+		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.8\textwidth]{Imagenes/mealy.jpg}
+			\includegraphics[width=0.5\textwidth]{Imagenes/mux.png}
+			\caption{Multiplexado de displays de 7 segmentos.}
+			\label{fig:mux}
+		\end{figure} 
+		
+		
+		\subsection{Decodificador de cuadratura}
+			El decodificador del encoder en cuadratura se plantea como una máquina de estado que detecta el sentido de acuerdo si la señal A se adelanta a señal B o su inversa. Por cada transición del nivel bajo hacia alto o bajo se produce un pulso. Como se dijo previamente, una características principal de este tipo de encoder es su resolución, el encoder utilizado tiene una resolución de 1440 ppv, la cual se multiplica por 4, correspondiendo a un ciclo entero entre las señales en cuadratura A y B, otorgando una mayor resolución de 5760 ppv, haciendo necesario un contador de modulo 5760.	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\textwidth]{Imagenes/mealy.jpg}
 			\caption{Maquina de Mealy}
 			\label{fig:mealy}
 		\end{figure} 
-	
-	
-	\subsection{Control de lazo de velocidad de un motor C.C.}
+		
+		Los resultados de la máquina de Mealy se observan en la imagen \textcolor{blue}{\textbf{\ref{fig:mealy_tb}}}, aclarando que se probaron 3 arquitecturas distintas en la descripción, dos mealy y un combinacional puro.
 
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{Imagenes/tb_mealy.png}
+			\caption{Simulación de detector de cuadratura.}
+			\label{fig:mealy_tb}
+		\end{figure} 
 
-	\subsection{Control de motor paso a paso de velocidad a lazo abierto con rampa de aceleración y desale ración parametrizable}
+		\subsection{Contador 0 - 5159}
+			El encoder incremental usado se ve en la imagen \textcolor{blue}{\textbf{\ref{fig:encoder_real}}} 
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\textwidth]{Imagenes/encoder_real.jpeg}
+			\caption{Encoder de 1440 ppv.}
+			\label{fig:encoder_real}
+		\end{figure} 
+
+			Para el contador de modulo 5760, se usan los pulsos que se generan en el detector de cuadratura, de acuerdo si la señal es \textit{up} o \textdown{down}, el valor de contador asciende o desciende respectivamente. Como se ve en la figura \textcolor{blue}{\textbf{\ref{fig:M}}}, si en algún momento se acierta uno de los pulsos y además concuerda con el valor parametrizable \textit{M} o \textit{M\_n}, el valor de registro se setea a 0.
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{Imagenes/mod5760.png}
+			\caption{Contador módulo 5760.}
+			\label{fig:M}
+		\end{figure} 
+
+		Para los displays en un principio se orientó la solución utilizando un conversor binario a BCD, el cual consiste en un registro de desplazamiento con una adición de un entero de valor 6 de acuerdo si se cumplen ciertas condiciones, el mismo se implemento y se vio que tenia el resultado correcto, sin embargo se trataba de una estructura que consumía muchos recursos y necesita de muchos pulsos de clock para convertir una entrada serie, a una salida paralela de 12 bit para los 4 displays, caso por el cual se implementa un contador simular al planteado en los ejercicios de entrenamiento (10).
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\textwidth]{Imagenes/updown.png}
+			\caption{Descripción de contador para displays 7 segmentos.}
+			\label{fig:updown}
+		\end{figure} 
+		
+		En la imagen \textcolor{blue}{\textbf{\ref{fig:updown}}} se puede apreciar que se utilizan 4 registros de 4 bits (dn\_reg) para cada uno de los displays, en el caso de que se acierte un pulso \textit{up}, se incrementa los registros de los displays, con la condición que si el valor previo era 9, el próximo valor posible es 0. Para el caso inverso, con el pulso \textit{down} la lógica es similar, pero en este caso los registros se decrementan, con la excepción que si el valor es 0 el siguiente valor sera 9.
+		Por ultimo se debe notar la condición que si el contador llega a un valor equivalente 5759 y se acierta un pulso up, los registros se reinician, caso contrario si se encuentra en 0 y se acierta un pulso down, el los registros se establecen a 5759.
+	
+		\subsection{PWM}
+			Para el control del motor se genera dos señales de PWM en contra fase, las cuales son utilizadas para controlar tanto la velocidad como el sentido de giro del motor. Estas señales son llevadas a una llave H, formada por un integrado L9110S, el comportamiento de la llave con las señales es la siguiente:
+			\begin{itemize}
+				\item{Duty $=$ 50\%} : Motor parado en torque.
+				\item{Duty $>$ 50\%}: Motor gira en sentido horario.
+				\item{Duty $<$ 50\%}: Motor gira en sentido anti horario.
+			\end{itemize}
+
+			\subsubsection{Frecuencia del PWM}
+				Como requisito se pedía una frecuencia de 400 Hz. Para ello se debe tener en cuenta la resolución del PWM, como así también la frecuencia del clock. Se elige una resolución de 7 bit para satisfacer la condición de un mínimo de 5\% y un máximo de 95 \%. 
+
+				\begin{equation}
+					f_{out} = \frac{f_{clk}}{2^{(n+1)}} = \frac{100\;Mhz}{2^18} \approx 381 Hz
+				\end{equation}
+	
+				Restando los 7 bit de resolución del PWM se debe elegir el divisor de frecuencia correspondiente a Q(10), como se muestra en la imagen \textcolor{blue}{\textbf{\ref{fig:clk_div}}}.
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\textwidth]{Imagenes/clk_div.png}
+			\caption{Divisor de frecuencia}
+			\label{fig:clk_div}
+		\end{figure} 
+
+		De esta manera se tiene el clock del PWM, falta ajustar el periodo necesario para llegar a 400 Hz
+			\begin{equation}
+				T = \frac{T_{buscada}}{T_{clk\_div}} * 2^n = \frac{2,5 \; ms}{2,62 \; ms} * 128 \approx 122 
+			\end{equation}
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\textwidth]{Imagenes/pwm_400.png}
+			\caption{Descripción de PWM}
+			\label{fig:pwm_400}
+		\end{figure} 
+
+		Finalmente, se pide que si los pasos entre la posición actual del motor y la de referencia difieren en mas/menos 100, la velocidad es máxima, esto se consigue con la siguiente descripción.
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\textwidth]{Imagenes/func_pwm.png}
+			\caption{Seleccion de sentido de giro y duty cycle.}
+			\label{fig:func_pwm}
+		\end{figure} 
+
+		El funcionamiento de \textcolor{blue}{\textbf{\ref{fig:func_pwm}}} es el siguiente, \textit{pos} es derivado del modulo contador y \textit{ref} de los switchs y es variable con estas. Dependiendo cual sea mayor a la otra determinara el sentido de giro, ya sea clockwise(cw) o anticlockwise(acw). Por ultimo se busca la magnitud de separación entre ambas posiciones, si es mayor de 100 se elegirá un pwm mas cercano a la máxima velocidad respetando el sentido de giro, caso que la posición actual sea igual a la referencia, tanto cw y acw valen '0' y el duty queda al 50\% (torque).
+
+		\subsection{Simulaciones}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{Imagenes/sim_impl_120.png}
+			\caption{Simulación behavioral, con referencia puesta en 120.}
+			\label{fig:sim_behav_pwm}
+		\end{figure} 
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{Imagenes/sim_impl_120.png}
+			\caption{Simulación postfit, con referencia puesta en 120.}
+			\label{fig:sim_impl_pwm}
+		\end{figure} 
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{Imagenes/sim_up.png}
+			\caption{Reinicio contador ascendente modulo 5760}
+			\label{fig:cont_up}
+		\end{figure} 
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{Imagenes/sim_down.png}
+			\caption{Reinicio contador descendente modulo 5760}
+			\label{fig:cont_down}
+		\end{figure} 
+
+		\subsection{Multimedia}
+		Se adjunta un link de un vídeo da mostrativo. \\
+		\url{https://youtu.be/4qJg4IgcLNk}
+	\section{Control de lazo de velocidad de un motor C.C.}
+	\section{Control de motor paso a paso de velocidad a lazo abierto con rampa de aceleración y desale ración parametrizable}
 \end{document}

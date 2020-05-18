@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date         : Fri May 15 19:31:45 2020
+| Date         : Mon May 18 04:08:33 2020
 | Host         : Manjaro-Envy running 64-bit Manjaro Linux
 | Command      : report_utilization -file motorcc_cl_utilization_synth.rpt -pb motorcc_cl_utilization_synth.pb
 | Design       : motorcc_cl
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   63 |     0 |     20800 |  0.30 |
-|   LUT as Logic          |   63 |     0 |     20800 |  0.30 |
+| Slice LUTs*             |  148 |     0 |     20800 |  0.71 |
+|   LUT as Logic          |  148 |     0 |     20800 |  0.71 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |   67 |     0 |     41600 |  0.16 |
-|   Register as Flip Flop |   65 |     0 |     41600 |  0.16 |
+| Slice Registers         |  125 |     0 |     41600 |  0.30 |
+|   Register as Flip Flop |  123 |     0 |     41600 |  0.30 |
 |   Register as Latch     |    2 |     0 |     41600 | <0.01 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -55,9 +55,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 67    |          Yes |           - |        Reset |
+| 123   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 0     |          Yes |       Reset |            - |
+| 2     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   43 |     0 |       106 | 40.57 |
+| Bonded IOB                  |   45 |     0 |       106 | 42.45 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -115,7 +115,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
+| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -149,18 +149,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     |   65 |        Flop & Latch |
-| LUT4     |   34 |                 LUT |
-| OBUF     |   26 |                  IO |
-| LUT6     |   23 |                 LUT |
-| IBUF     |   17 |                  IO |
-| LUT5     |   10 |                 LUT |
-| LUT2     |   10 |                 LUT |
-| CARRY4   |    9 |          CarryLogic |
+| FDCE     |  121 |        Flop & Latch |
+| LUT4     |   68 |                 LUT |
+| LUT2     |   68 |                 LUT |
+| LUT6     |   35 |                 LUT |
+| LUT5     |   29 |                 LUT |
+| CARRY4   |   29 |          CarryLogic |
+| OBUF     |   27 |                  IO |
+| IBUF     |   18 |                  IO |
+| LUT3     |   16 |                 LUT |
 | LUT1     |    7 |                 LUT |
-| LUT3     |    5 |                 LUT |
 | LDCE     |    2 |        Flop & Latch |
-| BUFG     |    1 |               Clock |
+| FDRE     |    2 |        Flop & Latch |
+| BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 
 

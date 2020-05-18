@@ -1,7 +1,25 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto cec3628a41294c55b2ca3e0e7e07050a --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_mux_behav xil_defaultlib.tb_mux -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto cec3628a41294c55b2ca3e0e7e07050a --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_1a_behav xil_defaultlib.tb_1a -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture arch of entity xil_defaultlib.clkdiv [clkdiv_default]
+Compiling architecture arch of entity xil_defaultlib.debouncer [debouncer_default]
+Compiling architecture arch_mealy_stm_v2 of entity xil_defaultlib.quad_decoder [quad_decoder_default]
+Compiling architecture arch of entity xil_defaultlib.bin2sseg [bin2sseg_default]
+Compiling architecture arch of entity xil_defaultlib.disp_mux [disp_mux_default]
+Compiling architecture arch of entity xil_defaultlib.up_down_counter [\up_down_counter(n=13,m=5760,m_n...]
+Compiling architecture arch of entity xil_defaultlib.pwmg [pwmg_default]
+Compiling architecture arch of entity xil_defaultlib.motorcc_cl [motorcc_cl_default]
+Compiling architecture tb_arch of entity xil_defaultlib.tb_1a
+Built simulation snapshot tb_1a_behav
