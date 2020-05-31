@@ -1,0 +1,10 @@
+CONSTANT led_port_MSB, 01
+CONSTANT led_port_LSB, 00
+CONSTANT switch_port_MSB, 01
+CONSTANT switch_port_LSB, 00
+
+start:	input 	s0, switch_port_LSB
+	output 	s0, led_port_MSB
+	input 	s1, switch_port_MSB
+	output 	s1, led_port_LSB
+	jump start

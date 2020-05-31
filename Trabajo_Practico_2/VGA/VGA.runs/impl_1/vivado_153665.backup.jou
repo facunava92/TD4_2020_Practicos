@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Sat May 30 21:09:12 2020
+# Process ID: 153665
+# Current directory: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.runs/impl_1
+# Command line: vivado -log VGA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source VGA.tcl -notrace
+# Log file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.runs/impl_1/VGA.vdi
+# Journal file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source VGA.tcl -notrace

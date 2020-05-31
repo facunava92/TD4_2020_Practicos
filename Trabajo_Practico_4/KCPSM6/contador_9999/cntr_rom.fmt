@@ -1,0 +1,344 @@
+                ;=========================================================
+                ; Counter_up, output with leds and sseg
+                ;=========================================================
+                ;Program operation:
+                ;  - counter up to 9999, the sw establish the max_value,
+                ;    if the value is higher than 9999 the output is 0000
+                ; with the addition of reset and stop switches.
+                ;=========================================================
+                ; Register alias
+                ;=========================================================
+                ;commonly used local variables
+                NAMEREG s0, data_lsb             ; reg for temporary data
+                NAMEREG s1, data_msb             ; reg for temporary data
+                NAMEREG s2, x0                   ; least significant byte of x
+                NAMEREG s3, x1                   ; middle byte of x
+                NAMEREG s4, x2                   ; most significant byte of x
+                NAMEREG s5, max_value_lsb        ; max value lsb to compare with
+                NAMEREG s6, max_value_msb        ; max value msb to compare with
+                NAMEREG s7, value_lsb            ; value lsb to compare with
+                NAMEREG s8, value_msb            ; value msb to compare with
+                NAMEREG s9, stop_sw              ;
+                NAMEREG sA, reset_bttn           ;
+                NAMEREG sB, led0
+                NAMEREG sC, led1
+                NAMEREG sD, led2
+                NAMEREG sE, led3
+                NAMEREG sF, data
+                ;=========================================================
+                ; Port alias
+                ;=========================================================
+                ;------------input port definitions---------------------
+                CONSTANT sw_port_lsb, 00         ;8-bit switches lsb
+                CONSTANT sw_port_msb, 01         ;8-bit switches msb
+                CONSTANT stop_port, 02
+                CONSTANT reset_port, 03
+                ;------------output port definitions---------------------
+                CONSTANT led_port_lsb, 00
+                CONSTANT led_port_msb, 01
+                CONSTANT sseg0_port, 02          ;7-seg led 0
+                CONSTANT sseg1_port, 03          ;7-seg led 1
+                CONSTANT sseg2_port, 04          ;7-seg led 2
+                CONSTANT sseg3_port, 05          ;7-seg led 3
+                ;=========================================================
+                ; Main program
+                ;=========================================================
+                ;Calling hierarchy:
+                ;
+                ;main
+                ; - clr_data_mem
+                ; - read_switch
+                ; - reset?
+                ; - stop?
+                ; - sseg_up
+                ; - counter_up
+                ; - delay
+                ; - output_led
+                ;  -hex_to_led
+                ; - delay
+                CALL clr_data_mem
+       forever: 
+                CALL output_led
+                CALL read_switch
+                COMPARE stop_sw, 01
+                JUMP Z, continue
+                CALL sseg_up
+                CALL counter_up
+                CALL delay_250ms
+      continue: 
+                COMPARE reset_bttn, 01
+                JUMP Z, clear
+                JUMP forever
+         clear: 
+                LOAD value_msb, 00
+                LOAD value_lsb, 00
+                LOAD led0, 00
+                LOAD led1, 00
+                LOAD led2, 00
+                LOAD led3, 00
+                JUMP forever
+                ;=========================================================
+                ;routine: clr_data_mem
+                ;  function: clear data ram
+                ;  temp register: data
+                ;=========================================================
+  clr_data_mem: 
+                LOAD stop_sw, 00
+                LOAD reset_bttn, 00
+                LOAD data_lsb, 00
+                LOAD data_msb, 00
+                LOAD value_lsb, 00
+                LOAD value_msb, 00
+                LOAD led0, 00
+                LOAD led1, 00
+                LOAD led2, 00
+                LOAD led3, 00
+                RETURN 
+                ;=========================================================
+                ;routine: read switch
+                ;  function: obatin the max value for the counter
+                ;  input register: sw_in
+                ;  temp register: data
+                ;=========================================================
+   read_switch: 
+                INPUT stop_sw, stop_port
+                INPUT reset_bttn, reset_port
+                INPUT data_lsb, sw_port_lsb      ;read switch input
+                INPUT data_msb, sw_port_msb      ;read switch input
+                LOAD max_value_lsb, data_lsb
+                LOAD max_value_msb, data_msb
+                RETURN 
+                ;=========================================================
+                ;routine: counter_up
+                ;  function: increment "value" register until it
+                ;    reaches "max_value"
+                ;  temp register:
+                ;=========================================================
+    counter_up: 
+                COMPARE max_value_msb, 00
+                JUMP Z, lsb
+                COMPARE max_value_msb, 28
+                JUMP NC, clear_msb
+                COMPARE max_value_msb, 27
+                JUMP NC, error
+      no_error: 
+                COMPARE max_value_msb, value_msb
+                JUMP C, clear_msb
+                JUMP Z, lsb_
+          keep: 
+                ADD value_lsb, 01                ; incremetn: {value_lsb} + 1
+                ADDCY value_msb, 00              ; incremetn: {value_msb} + carry
+                RETURN 
+         error: 
+                COMPARE max_value_lsb, 10
+                JUMP NC, clear_msb
+                JUMP C, no_error
+          lsb_: 
+                COMPARE max_value_lsb, value_lsb
+                JUMP Z, clear_msb
+                JUMP C, clear_msb
+                JUMP NC, keep
+           lsb: 
+                COMPARE max_value_lsb, value_lsb
+                JUMP C, clear_lsb
+                JUMP Z, clear_lsb
+                ADD value_lsb, 01                ; incremetn: {value_lsb} + 1
+                RETURN 
+     clear_msb: 
+                LOAD value_msb, 00
+     clear_lsb: 
+                LOAD value_lsb, 00
+                LOAD led0, 00
+                LOAD led1, 00
+                LOAD led2, 00
+                LOAD led3, 00
+                RETURN 
+                ;=========================================================
+                ;routine: sseg_up
+                ;  function: increment "value" register until it
+                ;    reaches "max_value"
+                ;  temp register:
+                ;=========================================================
+       sseg_up: 
+                ADD led0, 01                     ; incremetn: {led0} + 1
+                COMPARE led0, 0A
+                JUMP NC, led1_up
+                JUMP NZ, done
+       led1_up: 
+                LOAD led0, 00
+                ADD led1, 01                     ; incremetn: {led1} + 1
+                COMPARE led1, 0A
+                JUMP NC, led2_up
+                JUMP NZ, done
+       led2_up: 
+                LOAD led1, 00
+                ADD led2, 01                     ; incremetn: {led2} + 1
+                COMPARE led2, 0A
+                JUMP NC, led3_up
+                JUMP NZ, done
+       led3_up: 
+                LOAD led2, 00
+                ADD led3, 01                     ; incremetn: {led3} + 1
+                COMPARE led2, 0A
+                JUMP NC, led4_up
+                JUMP NZ, done
+       led4_up: 
+                LOAD led3, 00
+          done: 
+                RETURN 
+                ;=========================================================
+                ;routine: output_led
+                ; funtion: assing the output of leds
+                ; output register: led_port_lsb
+                ; tmp register: value
+                ;=========================================================
+    output_led: 
+                OUTPUT value_lsb, led_port_lsb
+                OUTPUT value_msb, led_port_msb
+                LOAD data, led0
+                CALL hex_to_led
+                OUTPUT data, sseg0_port
+                LOAD data, led1
+                CALL hex_to_led
+                OUTPUT data, sseg1_port
+                LOAD data, led2
+                CALL hex_to_led
+                OUTPUT data, sseg2_port
+                LOAD data, led3
+                CALL hex_to_led
+                OUTPUT data, sseg3_port
+                RETURN 
+                ;=========================================================
+                ;routine: delay_XXXs
+                ; funtion: XXs delay
+                ; tmp register: s0, s1, s2
+                ;
+                ;=========================================================
+   delay_500ms: ; 500ms is 5,000,000 x 100ns (5,000,000 = 4C4B40 hex)
+                LOAD x2, 4C
+                LOAD x1, 4B
+                LOAD x0, 40
+                JUMP software_delay
+   delay_250ms: ; 250ms is 2,500,000 x 100ns (2,500,000 = 2625A0 hex)
+                LOAD x2, 26
+                LOAD x1, 25
+                LOAD x0, A0
+                JUMP software_delay
+   delay_100ms: ; 100ms is 1,000,000 x 100ns (1,000,000 = 0F4240 hex)
+                LOAD x2, 0F
+                LOAD x1, 42
+                LOAD x0, 40
+                JUMP software_delay
+    delay_50ms: ; 100ms is 500,000 x 100ns (500,000 = 07A120 hex)
+                LOAD x2, 07
+                LOAD x1, A1
+                LOAD x0, 20
+                JUMP software_delay
+    delay_20ms: ; 100ms is 200,000 x 100ns (200,000 = 030D40 hex)
+                LOAD x2, 03
+                LOAD x1, 0D
+                LOAD x0, 40
+                JUMP software_delay
+    delay_10ms: ; 100ms is 100,000 x 100ns (100,000 = 0186A0 hex)
+                LOAD x2, 01
+                LOAD x1, 86
+                LOAD x0, A0
+                JUMP software_delay
+                ;
+                ; The delay loop decrements [s2,s1,s0] until reaches zero
+                ; Each decrement cycle is 5 instructions which is 10 clock cycles
+                ; [2 clock cycles per instrutions] (100 ns at 100Mhz)
+                ;
+software_delay: 
+                LOAD x0, x0
+                ; decrement: {s2,s1,s0} - 1
+                SUB x0, 01
+                SUBCY x1, 00
+                SUBCY x2, 00
+                JUMP NZ, software_delay
+                RETURN 
+                ;=========================================================
+                ;routine: hex_to_led
+                ;  function: convert a hex digit to 7-seg led pattern
+                ;  input register: data
+                ;  output register: data
+                ;=========================================================
+    hex_to_led: 
+                COMPARE data, 00
+                JUMP NZ, comp_hex_1
+                LOAD data, C0                    ;7seg pattern 0
+                JUMP hex_done
+    comp_hex_1: 
+                COMPARE data, 01
+                JUMP NZ, comp_hex_2
+                LOAD data, F9                    ;7seg pattern 1
+                JUMP hex_done
+    comp_hex_2: 
+                COMPARE data, 02
+                JUMP NZ, comp_hex_3
+                LOAD data, A4                    ;7seg pattern 2
+                JUMP hex_done
+    comp_hex_3: 
+                COMPARE data, 03
+                JUMP NZ, comp_hex_4
+                LOAD data, B0                    ;7seg pattern 3
+                JUMP hex_done
+    comp_hex_4: 
+                COMPARE data, 04
+                JUMP NZ, comp_hex_5
+                LOAD data, 99                    ;7seg pattern 4
+                JUMP hex_done
+    comp_hex_5: 
+                COMPARE data, 05
+                JUMP NZ, comp_hex_6
+                LOAD data, 92                    ;7seg pattern 5
+                JUMP hex_done
+    comp_hex_6: 
+                COMPARE data, 06
+                JUMP NZ, comp_hex_7
+                LOAD data, 82                    ;7seg pattern 6
+                JUMP hex_done
+    comp_hex_7: 
+                COMPARE data, 07
+                JUMP NZ, comp_hex_8
+                LOAD data, F8                    ;7seg pattern 7
+                JUMP hex_done
+    comp_hex_8: 
+                COMPARE data, 08
+                JUMP NZ, comp_hex_9
+                LOAD data, 80                    ;7seg pattern 8
+                JUMP hex_done
+    comp_hex_9: 
+                COMPARE data, 09
+                JUMP NZ, comp_hex_a
+                LOAD data, 98                    ;7seg pattern 9
+                JUMP hex_done
+    comp_hex_a: 
+                COMPARE data, 0A
+                JUMP NZ, comp_hex_b
+                LOAD data, A0                    ;7seg pattern a
+                JUMP hex_done
+    comp_hex_b: 
+                COMPARE data, 0B
+                JUMP NZ, comp_hex_c
+                LOAD data, 83                    ;7seg pattern b
+                JUMP hex_done
+    comp_hex_c: 
+                COMPARE data, 0C
+                JUMP NZ, comp_hex_d
+                LOAD data, A7                    ;7seg pattern C
+                JUMP hex_done
+    comp_hex_d: 
+                COMPARE data, 0D
+                JUMP NZ, comp_hex_e
+                LOAD data, A1                    ;7seg pattern d
+                JUMP hex_done
+    comp_hex_e: 
+                COMPARE data, 0E
+                JUMP NZ, comp_hex_f
+                LOAD data, 84                    ;7seg pattern E
+                JUMP hex_done
+    comp_hex_f: 
+                LOAD data, 8E                    ;7seg pattern f
+      hex_done: 
+                RETURN 

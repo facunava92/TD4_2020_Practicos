@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date             : Sun May  3 13:59:02 2020
+| Date             : Sat May 30 21:10:28 2020
 | Host             : Manjaro-Envy running 64-bit Manjaro Linux
 | Command          : report_power -file VGA_power_routed.rpt -pb VGA_power_summary_routed.pb -rpx VGA_power_routed.rpx
 | Design           : VGA
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.197        |
+| Total On-Chip Power (W)  | 0.198        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.125        |
+| Dynamic (W)              | 0.126        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      271 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      121 |     20800 |            0.58 |
+| Clocks         |     0.002 |        5 |       --- |             --- |
+| Slice Logic    |    <0.001 |      295 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      137 |     20800 |            0.66 |
 |   CARRY4       |    <0.001 |       14 |      8150 |            0.17 |
-|   Register     |    <0.001 |       88 |     41600 |            0.21 |
-|   F7/F8 Muxes  |    <0.001 |        2 |     32600 |           <0.01 |
+|   Register     |    <0.001 |       86 |     41600 |            0.21 |
+|   F7/F8 Muxes  |    <0.001 |        4 |     32600 |            0.01 |
 |   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |      161 |       --- |             --- |
+| Signals        |    <0.001 |      180 |       --- |             --- |
 | MMCM           |     0.123 |        1 |         5 |           20.00 |
-| I/O            |    <0.001 |        8 |       106 |            7.55 |
+| I/O            |    <0.001 |        9 |       106 |            8.49 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.197 |          |           |                 |
+| Total          |     0.198 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 | Unspecified | NA         |
+| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.081 |       0.068 |      0.013 | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 | Unspecified | NA         |
@@ -141,12 +141,13 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------+-----------+
-| Name          | Power (W) |
-+---------------+-----------+
-| VGA           |     0.125 |
-|   clok_108Mhz |     0.124 |
-|     U0        |     0.124 |
-+---------------+-----------+
++-----------------+-----------+
+| Name            | Power (W) |
++-----------------+-----------+
+| VGA             |     0.126 |
+|   clok_108Mhz   |     0.124 |
+|     U0          |     0.124 |
+|   vga_sync_unit |     0.001 |
++-----------------+-----------+
 
 

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="fnavarro" Host="Manjaro-Envy" Pid="15568" HostCore="8" HostMemory="16330020">
+    <Process Command="vivado" Owner="fnavarro" Host="Manjaro-Envy" Pid="153622" HostCore="8" HostMemory="16330020">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="fnavarro" Host="Manjaro-Envy" Pid="20146" HostCore="8" HostMemory="16330020">
+    <Process Command="vivado" Owner="fnavarro" Host="Manjaro-Envy" Pid="158078" HostCore="8" HostMemory="16330020">
     </Process>
 </ProcessHandle>

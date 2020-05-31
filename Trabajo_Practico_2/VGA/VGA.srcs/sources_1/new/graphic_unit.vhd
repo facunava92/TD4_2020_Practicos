@@ -6,6 +6,7 @@ use ieee.numeric_std.all;
 entity graphic_unit is
     Port ( 
             clk, reset          :   in      std_logic;
+            hv                  :   in      std_logic;
             gra_still           :   in      std_logic;
             video_on            :   in      std_logic;
             pixel_x, pixel_y    :   in      std_logic_vector (10 downto 0);
@@ -60,8 +61,8 @@ architecture arch of graphic_unit is
     signal ball_y_reg, ball_y_next	:	unsigned(10 downto 0);
     
     --Registros de velocidad de ball , se descompone en x , y
-    signal delta_x_reg, delta_x_next	:	unsigned(10 downto 0) := "00000001111";
-    signal delta_y_reg, delta_y_next	:	unsigned(10 downto 0) := "00000001111";
+    signal delta_x_reg, delta_x_next	:	unsigned(10 downto 0) := "00000000101";
+    signal delta_y_reg, delta_y_next	:	unsigned(10 downto 0) := "00000000101";
     
     
     ----------------------------------------------
@@ -121,8 +122,8 @@ begin
         if (reset='1') then
             ball_x_reg     <= (others=>'0');
             ball_y_reg     <= (others=>'0');
-            delta_x_reg 	<= ("00000001111");
-            delta_y_reg 	<= ("00000001111");
+            delta_x_reg 	<= ("00000000101");
+            delta_y_reg 	<= ("00000000101");
             elsif (rising_edge(clk)) then
                 if (gra_still = '0') then
                     ball_x_reg 	<= ball_x_next;
@@ -204,25 +205,45 @@ begin
         end if;
     end process;                    
 
-process(clk)
+process(clk, hv, pix_x, pix_y)
 	begin
 		if rising_edge(clk) then
-            if (pix_x >= 0) and (pix_x < 160) then
-                rgb_bg <= "111";
-            elsif (pix_x >= 160) and (pix_x < 320)  then
-                rgb_bg <= "110";
-            elsif (pix_x >= 320) and (pix_x < 480)  then
-                rgb_bg <= "101";
-            elsif (pix_x >= 480) and (pix_x < 640)  then
-                rgb_bg <= "100"; 
-            elsif (pix_x >= 640) and (pix_x < 800)  then
-                rgb_bg <= "011"; 
-            elsif (pix_x >= 800) and (pix_x < 960)  then
-                rgb_bg <= "010";                                                              
-            elsif (pix_x >= 960) and (pix_x < 1120)  then
-                rgb_bg <= "001";
+            if (hv = '1') then
+                if (pix_x >= 0) and (pix_x < 160) then
+                    rgb_bg <= "111";
+                elsif (pix_x >= 160) and (pix_x < 320)  then
+                    rgb_bg <= "110";
+                elsif (pix_x >= 320) and (pix_x < 480)  then
+                    rgb_bg <= "101";
+                elsif (pix_x >= 480) and (pix_x < 640)  then
+                    rgb_bg <= "100"; 
+                elsif (pix_x >= 640) and (pix_x < 800)  then
+                    rgb_bg <= "011"; 
+                elsif (pix_x >= 800) and (pix_x < 960)  then
+                    rgb_bg <= "010";                                                              
+                elsif (pix_x >= 960) and (pix_x < 1120)  then
+                    rgb_bg <= "001";
+                else
+                    rgb_bg <= "000";
+                end if;                
             else
-                rgb_bg <= "000";                
+                if (pix_y >= 0) and (pix_y < 128) then
+                    rgb_bg <= "111";
+                elsif (pix_y >= 128) and (pix_y < 256)  then
+                    rgb_bg <= "110";
+                elsif (pix_y >= 256) and (pix_y < 364)  then
+                    rgb_bg <= "101";
+                elsif (pix_y >= 364) and (pix_y < 512)  then
+                    rgb_bg <= "100"; 
+                elsif (pix_y >= 512) and (pix_y < 640)  then
+                    rgb_bg <= "011"; 
+                elsif (pix_y >= 640) and (pix_y < 768)  then
+                    rgb_bg <= "010";                                                              
+                elsif (pix_y >= 768) and (pix_y < 896)  then
+                    rgb_bg <= "001";
+                else
+                    rgb_bg <= "000";
+                end if; 
             end if;
         end if;	
 	end process;

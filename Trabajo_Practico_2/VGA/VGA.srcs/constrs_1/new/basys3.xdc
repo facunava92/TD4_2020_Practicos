@@ -30,5 +30,10 @@
 	   set_property IOSTANDARD LVCMOS33 [get_ports reset]
 	   
 ## Switches
+    #sw01
+    set_property PACKAGE_PIN V17 [get_ports {hv}]					
+        set_property IOSTANDARD LVCMOS33 [get_ports {hv}]
+
+    #sw15
     set_property PACKAGE_PIN R2 [get_ports {gra_still}]					
         set_property IOSTANDARD LVCMOS33 [get_ports {gra_still}]	   
