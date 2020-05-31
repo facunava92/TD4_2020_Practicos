@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date         : Sat May 30 22:04:47 2020
+| Date         : Sun May 31 16:05:21 2020
 | Host         : Manjaro-Envy running 64-bit Manjaro Linux
 | Command      : report_control_sets -verbose -file pico_cntr_control_sets_placed.rpt
 | Design       : pico_cntr
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    15 |
-|    Minimum number of control sets                        |    15 |
+| Total control sets                                       |    16 |
+|    Minimum number of control sets                        |    16 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    15 |
+| Unused register locations in slices containing registers |    20 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,9 +39,9 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    15 |
+| Total control sets |    16 |
 | >= 0 to < 4        |     1 |
-| >= 4 to < 6        |     0 |
+| >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     2 |
 | >= 8 to < 10       |     7 |
 | >= 10 to < 12      |     0 |
@@ -58,9 +58,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             151 |           52 |
+| No           | No                    | No                     |             149 |           48 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              20 |           11 |
+| No           | Yes                   | No                     |              25 |           11 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              14 |            4 |
@@ -74,20 +74,21 @@ Table of Contents
 |            Clock Signal           |       Enable Signal       |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count |
 +-----------------------------------+---------------------------+----------------------------------------------------------+------------------+----------------+
 |  clk_IBUF_BUFG                    | proc_unit/flag_enable     | proc_unit/internal_reset                                 |                1 |              2 |
-|  clk_IBUF_BUFG                    |                           | proc_unit/data_path_loop[0].output_data.sy_kk_mux_lut/O6 |                4 |              6 |
+|  clk_IBUF_BUFG                    |                           | proc_unit/active_interrupt                               |                2 |              4 |
 |  clk_IBUF_BUFG                    |                           | proc_unit/internal_reset                                 |                3 |              6 |
-|  proc_unit/E[1]                   |                           |                                                          |                3 |              8 |
-|  clk_IBUF_BUFG                    |                           | rom_unit/instruction[7]                                  |                4 |              8 |
-|  proc_unit/write_strobe_flop_0[0] |                           |                                                          |                4 |              8 |
+|  clk_IBUF_BUFG                    |                           | proc_unit/data_path_loop[0].output_data.sy_kk_mux_lut/O6 |                3 |              7 |
+|  proc_unit/E[1]                   |                           |                                                          |                2 |              8 |
+|  clk_IBUF_BUFG                    |                           | rom_unit/instruction[7]                                  |                3 |              8 |
+|  proc_unit/write_strobe_flop_0[0] |                           |                                                          |                2 |              8 |
 |  proc_unit/write_strobe_flop_1[0] |                           |                                                          |                4 |              8 |
-|  proc_unit/write_strobe_flop_2[0] |                           |                                                          |                4 |              8 |
-|  proc_unit/write_strobe_flop_3[0] |                           |                                                          |                4 |              8 |
-|  proc_unit/E[0]                   |                           |                                                          |                3 |              8 |
+|  proc_unit/write_strobe_flop_2[0] |                           |                                                          |                2 |              8 |
+|  proc_unit/write_strobe_flop_3[0] |                           |                                                          |                3 |              8 |
+|  proc_unit/E[0]                   |                           |                                                          |                2 |              8 |
 |  clk_IBUF_BUFG                    | proc_unit/WE              | proc_unit/internal_reset                                 |                3 |             12 |
 |  clk_IBUF_BUFG                    | proc_unit/WE              |                                                          |                2 |             16 |
 |  clk_IBUF_BUFG                    | proc_unit/register_enable |                                                          |                2 |             16 |
 |  clk_IBUF_BUFG                    | proc_unit/spm_enable      |                                                          |                8 |             32 |
-|  clk_IBUF_BUFG                    |                           |                                                          |               30 |            103 |
+|  clk_IBUF_BUFG                    |                           |                                                          |               33 |            101 |
 +-----------------------------------+---------------------------+----------------------------------------------------------+------------------+----------------+
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date         : Sat May 30 22:03:38 2020
+| Date         : Sun May 31 16:04:15 2020
 | Host         : Manjaro-Envy running 64-bit Manjaro Linux
 | Command      : report_utilization -file pico_cntr_utilization_synth.rpt -pb pico_cntr_utilization_synth.pb
 | Design       : pico_cntr
@@ -35,8 +35,8 @@ Table of Contents
 |   LUT as Memory            |   48 |     0 |      9600 |  0.50 |
 |     LUT as Distributed RAM |   48 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
-| Slice Registers            |  184 |     0 |     41600 |  0.44 |
-|   Register as Flip Flop    |  136 |     0 |     41600 |  0.33 |
+| Slice Registers            |  185 |     0 |     41600 |  0.44 |
+|   Register as Flip Flop    |  137 |     0 |     41600 |  0.33 |
 |   Register as Latch        |   48 |     0 |     41600 |  0.12 |
 | F7 Muxes                   |   16 |     0 |     16300 |  0.10 |
 | F8 Muxes                   |    8 |     0 |      8150 |  0.10 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 48    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 136   |          Yes |       Reset |            - |
+| 137   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -152,9 +152,9 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  136 |        Flop & Latch |
-| LUT6     |   88 |                 LUT |
-| LUT5     |   50 |                 LUT |
+| FDRE     |  137 |        Flop & Latch |
+| LUT6     |   87 |                 LUT |
+| LUT5     |   51 |                 LUT |
 | LDCE     |   48 |        Flop & Latch |
 | RAMS64E  |   32 |  Distributed Memory |
 | OBUF     |   28 |                  IO |
@@ -164,9 +164,9 @@ Table of Contents
 | CARRY4   |   15 |          CarryLogic |
 | RAMS32   |    8 |  Distributed Memory |
 | MUXF8    |    8 |               MuxFx |
-| LUT3     |    7 |                 LUT |
 | LUT4     |    6 |                 LUT |
-| LUT2     |    4 |                 LUT |
+| LUT3     |    6 |                 LUT |
+| LUT2     |    5 |                 LUT |
 | RAMB36E1 |    1 |        Block Memory |
 | LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |

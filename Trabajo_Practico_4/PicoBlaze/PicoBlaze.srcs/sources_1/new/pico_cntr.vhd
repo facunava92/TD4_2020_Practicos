@@ -12,7 +12,7 @@ entity pico_cntr is
 end pico_cntr;
 
 architecture arch of pico_cntr is
-    signal	sseg3_next, sseg2_next     :   std_logic_vector(7 downto 0);
+     signal	sseg3_next, sseg2_next     :   std_logic_vector(7 downto 0);
     signal	sseg1_next, sseg0_next     :   std_logic_vector(7 downto 0);    
     signal	sseg3_reg,  sseg2_reg      :   std_logic_vector(7 downto 0);
     signal	sseg1_reg,  sseg0_reg      :   std_logic_vector(7 downto 0);   
@@ -90,7 +90,7 @@ begin
     -- Unused inputs on processor
     kcpsm6_reset <= '0';
     kcpsm6_sleep <= '0';
-    interrupt    <= '0';
+    interrupt    <= reset;
     
     reset_proc : process(clk)
     begin
@@ -110,10 +110,8 @@ begin
                     in_port <= sw(7 downto 0);
                 when "01"  =>
                     in_port <= "0" & sw(14 downto 8);
-                when "10" =>
-                    in_port <= "0000000" & sw(15);
                 when others =>
-                    in_port <= "0000000" & reset;
+                    in_port <= "0000000" & sw(15);
             end case;
        end if;
     end process input_ports;

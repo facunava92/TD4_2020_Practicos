@@ -7,11 +7,6 @@
 ;	with the addition of reset and stop switches.
 
 ;=========================================================
-; Dataconstant
-;=========================================================
-constant TOG_MASK, FF  ;	mask=1111_1111
-;=========================================================
-
 ; Register alias
 ;=========================================================
 ;commonly used local variables
@@ -25,12 +20,13 @@ namereg s6, max_value_msb	; max value msb to compare with
 namereg s7, value_lsb		; value lsb to compare with
 namereg s8, value_msb		; value msb to compare with
 namereg s9, stop_sw			;
-namereg sa, led0
-namereg sb, led1
-namereg sc, led2
-namereg sd, led3
-namereg se, data
-namereg sf, blink
+namereg sa, reset_bttn		;
+namereg sb, led0
+namereg sc, led1
+namereg sd, led2
+namereg se, led3
+namereg sf, data
+
 ;=========================================================
 ; Port alias
 ;=========================================================
@@ -38,6 +34,7 @@ namereg sf, blink
 constant sw_port_lsb, 00	;8-bit switches lsb
 constant sw_port_msb, 01	;8-bit switches msb
 constant stop_port, 02
+constant reset_port, 03
 ;------------output port definitions---------------------
 constant led_port_lsb, 00 
 constant led_port_msb, 01
@@ -52,8 +49,9 @@ constant sseg3_port, 05    ;7-seg led 3
 ;Calling hierarchy:
 ;
 ;main
-;	- init
+;	- clr_data_mem
 ;	- read_switch
+;	- reset?
 ;	- stop?
 ;	- sseg_up
 ;	- counter_up
@@ -62,7 +60,7 @@ constant sseg3_port, 05    ;7-seg led 3
 ;		-hex_to_led
 ;	- delay
 	
-	call init
+	call clr_data_mem
 forever: 
 	call output_led
 	call read_switch
@@ -70,20 +68,29 @@ forever:
 	jump z, continue
 	call sseg_up
 	call counter_up
-	call delay_500ms
-continue:	
+	call delay_250ms
+continue:
+	compare reset_bttn, 01
+	jump z, clear
 	jump forever
 
+clear:
+	load value_msb, 00
+	load value_lsb, 00
+	load led0, 00
+	load led1, 00
+	load led2, 00
+	load led3, 00
+	jump forever
 
 ;=========================================================
 ;routine: clr_data_mem
 ;  function: clear data ram
 ;  temp register: data 
 ;=========================================================
-init:
-	enable interrupt
 clr_data_mem:
 	load stop_sw, 00
+	load reset_bttn, 00
 	load data_lsb, 00
 	load data_msb, 00
 	load value_lsb, 00
@@ -92,27 +99,7 @@ clr_data_mem:
 	load led1, 00
 	load led2, 00
 	load led3, 00
-	load blink, 00
 	return
-
-;=========================================================
-;routine: interrupt service routine
-;=========================================================
-int_service_routine:
-	load value_msb, 00
-	load value_lsb, 00
-	load led0, 00
-	load led1, 00
-	load led2, 00
-	load led3, 00
-	call output_led
-	returni enable
-
-;=========================================================
-;interrupt vector
-;=========================================================
-   address 3FF
-   jump int_service_routine
 
 ;=========================================================
 ;routine: read switch
@@ -122,6 +109,7 @@ int_service_routine:
 ;=========================================================
 read_switch:
 	input stop_sw, stop_port
+	input reset_bttn, reset_port
 	input data_lsb, sw_port_lsb    ;read switch input
 	input data_msb, sw_port_msb    ;read switch input	
 	load max_value_lsb, data_lsb
@@ -139,9 +127,9 @@ counter_up:
 	compare max_value_msb, 00
 	jump z, lsb
 	compare max_value_msb, 28
-	jump nc, error 
+	jump nc, clear_msb
 	compare max_value_msb, 27
-	jump nc, error_
+	jump nc, error
 no_error:
 	compare max_value_msb, value_msb
 	jump c, clear_msb
@@ -150,14 +138,14 @@ keep:
 	add value_lsb, 01	; incremetn: {value_lsb} + 1
 	addcy value_msb, 00	; incremetn: {value_msb} + carry
 	return
-error_:
+error:
 	compare max_value_lsb, 10
-	jump nc, error 
+	jump nc, clear_msb
 	jump c, no_error
 lsb_:
 	compare max_value_lsb, value_lsb
-	jump z,  clear_msb 
-	jump c,  clear_msb
+	jump z, clear_msb
+	jump c, clear_msb
 	jump nc, keep
 lsb:
 	compare max_value_lsb, value_lsb
@@ -174,15 +162,7 @@ clear_lsb:
 	load led2, 00
 	load led3, 00
 	return
-error:
-	xor blink, TOG_MASK
-	load value_msb, blink
-	load value_lsb, blink
-	load led0, 0E
-	load led1, 0E
-	load led2, 0E
-	load led3, 0E
-	return
+
 ;=========================================================
 ;routine: sseg_up
 ;  function: increment "value" register until it 
@@ -192,32 +172,28 @@ error:
 sseg_up:
 	add led0, 01	; incremetn: {led0} + 1
 	compare led0, 0a
-	jump z, led1_up
-	jump nc, clear0
+	jump nc, led1_up
 	jump nz, done
 
 led1_up:
 	load led0, 00
 	add led1, 01	; incremetn: {led1} + 1
 	compare led1, 0a
-	jump z, led2_up
-	jump nc, clear1
+	jump nc, led2_up
 	jump nz, done
 
 led2_up:
 	load led1, 00
 	add led2, 01	; incremetn: {led2} + 1
 	compare led2, 0a
-	jump z, led3_up
-	jump nc, clear2
+	jump nc, led3_up
 	jump nz, done
 
 led3_up:
 	load led2, 00
 	add led3, 01	; incremetn: {led3} + 1
 	compare led2, 0a
-	jump z, led4_up
-	jump nc, clear3
+	jump nc, led4_up
 	jump nz, done
 
 led4_up:
@@ -226,21 +202,10 @@ led4_up:
 done:	
 	return
 
-clear0:
-	load led0, 00
-clear1:
-	load led1, 00
-clear2:
-	load led2, 00
-clear3:
-	load led3, 00
-	return
 ;=========================================================
 ;routine: output_led
 ;	funtion: assing the output of leds
-;	output register: led_port_msb, led_port_lsb
-;					 sseg0_port, sseg2_port
-;					 sseg2_port, sseg3_port
+;	output register: led_port_lsb
 ;	tmp register: value
 ;=========================================================
 output_led:
@@ -268,7 +233,7 @@ output_led:
 ;=========================================================
 ;routine: delay_XXXs
 ;	funtion: XXs delay
-;	tmp register: x0, x1, x2
+;	tmp register: s0, s1, s2
 ;
 ;=========================================================
 delay_500ms:		; 500ms is 5,000,000 x 100ns (5,000,000 = 4C4B40 hex)
@@ -289,19 +254,19 @@ delay_100ms:		; 100ms is 1,000,000 x 100ns (1,000,000 = 0F4240 hex)
 	load x0, 40
 	jump software_delay
 
-delay_50ms:			; 50ms is 500,000 x 100ns (500,000 = 07A120 hex)
+delay_50ms:		; 100ms is 500,000 x 100ns (500,000 = 07A120 hex)
 	load x2, 07
 	load x1, A1
 	load x0, 20
 	jump software_delay
 
-delay_20ms:			; 20ms is 200,000 x 100ns (200,000 = 030D40 hex)
+delay_20ms:		; 100ms is 200,000 x 100ns (200,000 = 030D40 hex)
 	load x2, 03
 	load x1, 0D
 	load x0, 40
 	jump software_delay
 
-delay_10ms:			; 10ms is 100,000 x 100ns (100,000 = 0186A0 hex)
+delay_10ms:		; 100ms is 100,000 x 100ns (100,000 = 0186A0 hex)
 	load x2, 01
 	load x1, 86
 	load x0, A0

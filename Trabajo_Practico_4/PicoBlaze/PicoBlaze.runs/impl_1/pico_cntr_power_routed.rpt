@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date             : Sat May 30 22:05:09 2020
+| Date             : Sun May 31 16:05:41 2020
 | Host             : Manjaro-Envy running 64-bit Manjaro Linux
 | Command          : report_power -file pico_cntr_power_routed.rpt -pb pico_cntr_power_summary_routed.pb -rpx pico_cntr_power_routed.rpx
 | Design           : pico_cntr
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.001 |        3 |       --- |             --- |
-| Slice Logic              |     0.002 |      457 |       --- |             --- |
-|   LUT as Logic           |     0.001 |       98 |     20800 |            0.47 |
+| Slice Logic              |     0.002 |      463 |       --- |             --- |
+|   LUT as Logic           |     0.001 |       99 |     20800 |            0.48 |
 |   LUT as Distributed RAM |    <0.001 |       48 |      9600 |            0.50 |
-|   Register               |    <0.001 |      185 |     41600 |            0.44 |
+|   Register               |    <0.001 |      188 |     41600 |            0.45 |
 |   CARRY4                 |    <0.001 |       15 |      8150 |            0.18 |
 |   F7/F8 Muxes            |    <0.001 |       24 |     32600 |            0.07 |
 |   Others                 |     0.000 |       25 |       --- |             --- |
-| Signals                  |     0.003 |      347 |       --- |             --- |
+| Signals                  |     0.003 |      350 |       --- |             --- |
 | Block RAM                |    <0.001 |        1 |        50 |            2.00 |
 | I/O                      |     0.051 |       46 |       106 |           43.40 |
 | Static Power             |     0.072 |          |           |                 |
