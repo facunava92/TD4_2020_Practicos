@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1590951796">
-  <File Type="VDS-TIMING-PB" Name="pico_cntr_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="pico_cntr_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="pico_cntr.tcl"/>
+  <File Type="REPORTS-TCL" Name="pico_cntr_reports.tcl"/>
+  <File Type="RDS-RDS" Name="pico_cntr.vds"/>
   <File Type="RDS-DCP" Name="pico_cntr.dcp"/>
   <File Type="RDS-UTIL-PB" Name="pico_cntr_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="pico_cntr_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="pico_cntr_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="pico_cntr.vds"/>
-  <File Type="REPORTS-TCL" Name="pico_cntr_reports.tcl"/>
-  <File Type="PA-TCL" Name="pico_cntr.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/cntr_rom.vhd">

@@ -2,8 +2,8 @@
 # Vivado v2019.2.1 (64-bit)
 # SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
 # IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
-# Start of session at: Sun May 31 16:05:55 2020
-# Process ID: 94653
+# Start of session at: Tue Jun  2 16:24:33 2020
+# Process ID: 44424
 # Current directory: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_4/PicoBlaze/PicoBlaze.runs/impl_1
 # Command line: vivado -log pico_cntr.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pico_cntr.tcl -notrace
 # Log file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_4/PicoBlaze/PicoBlaze.runs/impl_1/pico_cntr.vdi
