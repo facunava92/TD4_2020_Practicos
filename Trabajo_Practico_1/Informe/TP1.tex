@@ -1,6 +1,8 @@
 \documentclass[11pt, a4paper]{article}
 \usepackage[utf8x]{inputenc}
 \usepackage[sort]{natbib}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4} 
 
 \usepackage[spanish]{babel}
 \usepackage{enumitem}
@@ -121,9 +123,27 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 \end{figure} 
 
 \clearpage
-\section{Desarrollo}
+\section{Control de lazo cerrado en posición de un motor C.C.}
+\subsection{Consigna}
+	Realizar la descripción de un decodificador de encoder incremental visualizando en un display los pulsos en n\_contador\_up\_down.
 
-	\subsection{Estructura del proyecto}
+	Con la cuenta se debe controlar una señal PWM. Esta señal, el ciclo de trabajo debe variar entre $5\%$ y $95\%$. La frecuencia debe ser de 400 Hz.
+
+	El ciclo de trabajo al 50\% del PWM, debe suceder cuando la comparación de la cuenta del contador\_up\_down es igual a la entrada de referencia.
+
+	La entrada de referencia, nos dice en que lugar se quiere posicionar el motor, dentro de una revolución indicada por la cuenta desde 0 a 1999 pulsos de encoder.
+
+	La entrada debe ser de 11bit, como tambien el contador\_up\_down.
+
+	La señal PWM debe ser maxima para una diferencia $\pm 100$ entre la cuenta de los pulsos (contador\_up\_down) y la de referencia.
+
+
+\subsection{Modificaciones}
+	Se modificó levemente la consigna para sacar provecho del hardware disponible, se utiliza un encoder de 1440 PPV, por lo cual es necesario incrementar el contador y la cantidad de bits necesaria para representar esta nueva magnitud.
+
+\subsection{Desarrollo}
+
+	\subsubsection{Estructura del proyecto}
 	El proyecto fue desarrollado en el SW Vivado 2019.2.1, ya que se utilizo la plataforma de entrenamiento de Digilent Basys3.
 
 	\begin{figure}[H]
@@ -133,7 +153,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 		\label{fig:proyecto_vivado}
 	\end{figure} 
 
-	\subsection{Debouncer}
+	\subsubsection{Debouncer}
 	Siempre existe la posibilidad de ruido externo que se puede introducir dentro de la señal, en este caso se plantea un filtro digital a través de un registro, el cual podría ser parametrizado en caso que se requiera un tiempo mayor para estabilizar la señal.
 
 	\begin{figure}[H]
@@ -153,10 +173,10 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 	\end{figure} 
 
 
-		\subsection{Divisor de frecuencia y multiplexado de displays}
+	\subsubsection{Divisor de frecuencia y multiplexado de displays}
 			A partir de la frecuencia de la placa $f_1$ en 100 MHz, se pretende utilizarla para realizar el multiplexado de los 4 displays necesarios para visualizar la cuenta hasta 5759, como el ojo no es capaz de percibir el encendido y apagado a alta velocidad, fenómeno conocido como persistencia de la visión, engañando al espectador en creer que el los displays se encuentran encendido en simultáneo.
 		\begin{equation}
-			f_{mux} = \frac{f_{in}}{2^n} = \frac{100Mhz}{2^{17}} \approx 800 \Hz
+			f_{mux} = \frac{f_{in}}{2^n} = \frac{100Mhz}{2^{17}} \approx 800 Hz
 		\end{equation}
 
 			Con la frecuencia de 100 Mhz, es necesario un registro de 19 bits de longitud, con los 2 MSB se multiplexa la salida de los display a una velocidad aproximada de 800 Hz.
@@ -168,7 +188,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 		\end{figure} 
 		
 		
-		\subsection{Decodificador de cuadratura}
+	\subsubsection{Decodificador de cuadratura}
 			El decodificador del encoder en cuadratura se plantea como una máquina de estado que detecta el sentido de acuerdo si la señal A se adelanta a señal B o su inversa. Por cada transición del nivel bajo hacia alto o bajo se produce un pulso. Como se dijo previamente, una características principal de este tipo de encoder es su resolución, el encoder utilizado tiene una resolución de 1440 ppv, la cual se multiplica por 4, correspondiendo a un ciclo entero entre las señales en cuadratura A y B, otorgando una mayor resolución de 5760 ppv, haciendo necesario un contador de módulo 5760.
 		\begin{figure}[H]
 			\centering
@@ -187,7 +207,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 		\end{figure} 
 \clearpage
 
-		\subsection{Contador 0 - 5759}
+	\subsubsection{Contador 0 - 5759}
 			El encoder incremental usado se ve en la imagen \textcolor{blue}{\textbf{\ref{fig:encoder_real}}} 
 
 		\begin{figure}[H]
@@ -218,7 +238,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 		En la imagen \textcolor{blue}{\textbf{\ref{fig:updown}}} se puede apreciar que se utilizan 4 registros de 4 bits (dn\_reg) para cada uno de los displays, en el caso de que se acierte un pulso \textit{up}, se incrementa los registros de los displays, con la condición que si el valor previo era 9, el próximo valor posible es 0. Para el caso inverso, con el pulso \textit{down} la lógica es similar, pero en este caso los registros se decrementan, con la excepción que si el valor es 0 el siguiente valor sera 9.
 		Por ultimo se debe notar la condición que si el contador llega a un valor equivalente 5759 y se acierta un pulso up, los registros se reinician, caso contrario si se encuentra en 0 y se acierta un pulso down, el los registros se establecen a 5759.
 	
-		\subsection{PWM}
+	\subsubsection{PWM}
 			Para el control del motor se genera dos señales de PWM en contra fase, las cuales son utilizadas para controlar tanto la velocidad como el sentido de giro del motor. Estas señales son llevadas a una llave H, formada por un integrado L9110S, el comportamiento de la llave con las señales es la siguiente:
 			\begin{itemize}
 				\item{Duty $=$ 50\%} : Motor parado en torque.
@@ -226,7 +246,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 				\item{Duty $<$ 50\%}: Motor gira en sentido anti horario.
 			\end{itemize}
 
-			\subsubsection{Frecuencia del PWM}
+		\paragraph{Frecuencia del PWM}
 				Como requisito se pedía una frecuencia de 400 Hz. Para ello se debe tener en cuenta la resolución del PWM, como así también la frecuencia del clock. Se elige una resolución de 7 bit para satisfacer la condición de un mínimo de 5\% y un máximo de 95 \%. 
 
 				\begin{equation}
@@ -265,7 +285,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 
 		El funcionamiento del código en  \textcolor{blue}{\textbf{\ref{fig:func_pwm}}} es el siguiente, \textit{pos} es derivado del módulo contador y \textit{ref} de los switchs y es variable con estas. Dependiendo cual sea mayor a la otra determinara el sentido de giro, ya sea clockwise(cw) o anticlockwise(acw). Por ultimo se busca la magnitud de separación entre ambas posiciones, si es mayor de 100 se elegirá un pwm mas cercano a la máxima velocidad respetando el sentido de giro, caso que la posición actual sea igual a la referencia, tanto cw y acw valen '0' y el duty queda al 50\% (torque).
 
-		\subsection{Simulaciones}
+		\subsubsection{Simulaciones}
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=\textwidth]{Imagenes/sim_impl_120.png}
@@ -294,7 +314,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 			\label{fig:cont_down}
 		\end{figure} 
 
-		\subsection{Multimedia}
+		\subsubsection{Multimedia}
 		Se adjunta un dos links de unos vídeos demostrativos: 
 		\begin{itemize}
 			\item Presentación: \url{https://youtu.be/4qJg4IgcLNk}

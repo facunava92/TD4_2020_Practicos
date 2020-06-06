@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1591420820 "TP1.tex" "TP1.pdf" "TP1" 1591420820
+["pdflatex"] 1591472691 "TP1.tex" "TP1.pdf" "TP1" 1591472693
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1572595918 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1572595918 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -115,13 +115,13 @@
   "Imagenes/sim_up.png" 1589783067 31916 775abbe80ba44bc68a652ebccb3699a2 ""
   "Imagenes/tb_mealy.png" 1589762871 33738 aaa97713033ad9afb71c236b8ee5d58b ""
   "Imagenes/updown.png" 1589764028 45857 d5f81f74588e704f37a46943039c8179 ""
-  "TP1.aux" 1591420771 7588 099b154d8c7e0ef93ebe9207dfecd664 "pdflatex"
-  "TP1.out" 1591420771 1295 5b4d87b5775f5dbb7e62408c3570db07 "pdflatex"
-  "TP1.tex" 1591420819 15726 bf083a5b4ba03cd87e3e7078f33552b1 ""
-  "TP1.toc" 1591420771 1681 b33291ece1ceb85844fd0e4e5b6cb214 "pdflatex"
+  "TP1.aux" 1591472693 8068 599c85ede6777cde81d92ed3b92c2648 "pdflatex"
+  "TP1.out" 1591472693 1605 6ad094009087a9f29deac1a449d6d8d9 "pdflatex"
+  "TP1.tex" 1591472692 16946 71aa54c15a2e1dc264a3f23ebf7c3dd7 ""
+  "TP1.toc" 1591472693 2041 77bb4b6fe4f88e21de8453d4191099ad "pdflatex"
   (generated)
-  "TP1.toc"
-  "TP1.out"
-  "TP1.log"
   "TP1.pdf"
   "TP1.aux"
+  "TP1.toc"
+  "TP1.log"
+  "TP1.out"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  6 JUN 2020 02:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  6 JUN 2020 16:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -324,25 +324,25 @@ LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `TP1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
  (/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count123
@@ -369,7 +369,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring OFF on input line 43.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -377,21 +377,21 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
  (./TP1.out) (./TP1.out)
 \@outlinefile=\write3
 \openout3 = `TP1.out'.
 
-LaTeX Info: Redefining \celsius on input line 41.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 41.
+LaTeX Info: Redefining \celsius on input line 43.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 43.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 41.
-Package gensymb Info: Using \Omega for \ohm on input line 41.
+LaTeX Info: Redefining \ohm on input line 43.
+Package gensymb Info: Using \Omega for \ohm on input line 43.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -429,19 +429,19 @@ Package gensymb Warning: Not defining \micro.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Imagenes/LOGO.jpg, id=76, 295.1025pt x 302.12875pt>
+<Imagenes/LOGO.jpg, id=88, 295.1025pt x 302.12875pt>
 File: Imagenes/LOGO.jpg Graphic file (type jpg)
 <use Imagenes/LOGO.jpg>
-Package pdftex.def Info: Imagenes/LOGO.jpg  used on input line 44.
+Package pdftex.def Info: Imagenes/LOGO.jpg  used on input line 46.
 (pdftex.def)             Requested size: 236.0823pt x 241.70332pt.
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -463,155 +463,146 @@ This may cause the page layout to be inconsistent, however.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.73 \clearpage
+l.75 \clearpage
                 [1]
-<Imagenes/encoder_absoluto.jpg, id=133, 858.20625pt x 356.33125pt>
+<Imagenes/encoder_absoluto.jpg, id=151, 858.20625pt x 356.33125pt>
 File: Imagenes/encoder_absoluto.jpg Graphic file (type jpg)
 <use Imagenes/encoder_absoluto.jpg>
-Package pdftex.def Info: Imagenes/encoder_absoluto.jpg  used on input line 93.
+Package pdftex.def Info: Imagenes/encoder_absoluto.jpg  used on input line 95.
 (pdftex.def)             Requested size: 409.72125pt x 170.11816pt.
  [2
 
  <./Imagenes/encoder_absoluto.jpg>]
-<Imagenes/encoder_incremental.jpg, id=139, 846.16125pt x 294.09875pt>
+<Imagenes/encoder_incremental.jpg, id=158, 846.16125pt x 294.09875pt>
 File: Imagenes/encoder_incremental.jpg Graphic file (type jpg)
 <use Imagenes/encoder_incremental.jpg>
-Package pdftex.def Info: Imagenes/encoder_incremental.jpg  used on input line 107.
+Package pdftex.def Info: Imagenes/encoder_incremental.jpg  used on input line 109.
 (pdftex.def)             Requested size: 409.72125pt x 142.40436pt.
-<Imagenes/encoder_cuadratura.jpg, id=141, 1240.635pt x 341.275pt>
+<Imagenes/encoder_cuadratura.jpg, id=160, 1240.635pt x 341.275pt>
 File: Imagenes/encoder_cuadratura.jpg Graphic file (type jpg)
 <use Imagenes/encoder_cuadratura.jpg>
-Package pdftex.def Info: Imagenes/encoder_cuadratura.jpg  used on input line 118.
+Package pdftex.def Info: Imagenes/encoder_cuadratura.jpg  used on input line 120.
 (pdftex.def)             Requested size: 409.72125pt x 112.7044pt.
  [3 <./Imagenes/encoder_incremental.jpg> <./Imagenes/encoder_cuadratura.jpg>]
-<Imagenes/estructura.png, id=149, 766.865pt x 456.70625pt>
+Overfull \hbox (4.72334pt too wide) in paragraph at lines 138--139
+[]\OT1/cmr/m/n/10.95 La se~nal PWM de-be ser ma-xi-ma pa-ra una di-fe-ren-cia $\OMS/cmsy/m/n/10.95 ^^F\OT1/cmr/m/n/10.95 100$ en-tre la cuen-ta de los pul-sos (con-ta-dor[]up[]down)
+ []
+
+<Imagenes/estructura.png, id=168, 766.865pt x 456.70625pt>
 File: Imagenes/estructura.png Graphic file (type png)
 <use Imagenes/estructura.png>
-Package pdftex.def Info: Imagenes/estructura.png  used on input line 131.
+Package pdftex.def Info: Imagenes/estructura.png  used on input line 151.
 (pdftex.def)             Requested size: 358.50317pt x 213.50908pt.
-<Imagenes/debouncer.png, id=150, 815.045pt x 294.09875pt>
+<Imagenes/debouncer.png, id=169, 815.045pt x 294.09875pt>
 File: Imagenes/debouncer.png Graphic file (type png)
 <use Imagenes/debouncer.png>
-Package pdftex.def Info: Imagenes/debouncer.png  used on input line 141.
+Package pdftex.def Info: Imagenes/debouncer.png  used on input line 161.
 (pdftex.def)             Requested size: 256.07481pt x 92.39926pt.
-<Imagenes/A_B.png, id=152, 485.815pt x 283.0575pt>
+[4
+
+ <./Imagenes/estructura.png>]
+<Imagenes/A_B.png, id=176, 485.815pt x 283.0575pt>
 File: Imagenes/A_B.png Graphic file (type png)
 <use Imagenes/A_B.png>
-Package pdftex.def Info: Imagenes/A_B.png  used on input line 150.
+Package pdftex.def Info: Imagenes/A_B.png  used on input line 170.
 (pdftex.def)             Requested size: 256.07481pt x 149.19911pt.
- [4
-
- <./Imagenes/estructura.png> <./Imagenes/debouncer.png>]
-./TP1.tex:159: Undefined control sequence.
-l.159 ...} = \frac{100Mhz}{2^{17}} \approx 800 \Hz
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<Imagenes/mux.png, id=161, 523.9575pt x 317.185pt>
+<Imagenes/mux.png, id=177, 523.9575pt x 317.185pt>
 File: Imagenes/mux.png Graphic file (type png)
 <use Imagenes/mux.png>
-Package pdftex.def Info: Imagenes/mux.png  used on input line 165.
+Package pdftex.def Info: Imagenes/mux.png  used on input line 185.
 (pdftex.def)             Requested size: 256.07481pt x 155.0203pt.
-<Imagenes/mealy.jpg, id=162, 1153.30875pt x 863.225pt>
+<Imagenes/mealy.jpg, id=178, 1153.30875pt x 863.225pt>
 File: Imagenes/mealy.jpg Graphic file (type jpg)
 <use Imagenes/mealy.jpg>
-Package pdftex.def Info: Imagenes/mealy.jpg  used on input line 175.
+Package pdftex.def Info: Imagenes/mealy.jpg  used on input line 195.
 (pdftex.def)             Requested size: 307.2929pt x 230.00485pt.
-[5 <./Imagenes/A_B.png> <./Imagenes/mux.png>]
-<Imagenes/tb_mealy.png, id=171, 1371.1225pt x 294.09875pt>
+ [5 <./Imagenes/debouncer.png> <./Imagenes/A_B.png> <./Imagenes/mux.png>]
+<Imagenes/tb_mealy.png, id=189, 1371.1225pt x 294.09875pt>
 File: Imagenes/tb_mealy.png Graphic file (type png)
 <use Imagenes/tb_mealy.png>
-Package pdftex.def Info: Imagenes/tb_mealy.png  used on input line 184.
+Package pdftex.def Info: Imagenes/tb_mealy.png  used on input line 204.
 (pdftex.def)             Requested size: 512.14963pt x 109.85594pt.
  [6 <./Imagenes/mealy.jpg> <./Imagenes/tb_mealy.png>]
-<Imagenes/encoder_real.jpeg, id=180, 1284.8pt x 963.6pt>
+<Imagenes/encoder_real.jpeg, id=198, 1284.8pt x 963.6pt>
 File: Imagenes/encoder_real.jpeg Graphic file (type jpg)
 <use Imagenes/encoder_real.jpeg>
-Package pdftex.def Info: Imagenes/encoder_real.jpeg  used on input line 195.
+Package pdftex.def Info: Imagenes/encoder_real.jpeg  used on input line 215.
 (pdftex.def)             Requested size: 256.07481pt x 192.05493pt.
-<Imagenes/mod5760.png, id=182, 913.4125pt x 87.32625pt>
+<Imagenes/mod5760.png, id=200, 913.4125pt x 87.32625pt>
 File: Imagenes/mod5760.png Graphic file (type png)
 <use Imagenes/mod5760.png>
-Package pdftex.def Info: Imagenes/mod5760.png  used on input line 204.
+Package pdftex.def Info: Imagenes/mod5760.png  used on input line 224.
 (pdftex.def)             Requested size: 512.14963pt x 48.96498pt.
-<Imagenes/updown.png, id=183, 313.4109pt x 134.6631pt>
+<Imagenes/updown.png, id=201, 313.4109pt x 134.6631pt>
 File: Imagenes/updown.png Graphic file (type png)
 <use Imagenes/updown.png>
-Package pdftex.def Info: Imagenes/updown.png  used on input line 213.
+Package pdftex.def Info: Imagenes/updown.png  used on input line 233.
 (pdftex.def)             Requested size: 409.72125pt x 176.04625pt.
  [7
 
  <./Imagenes/encoder_real.jpeg> <./Imagenes/mod5760.png> <./Imagenes/updown.png>]
-<Imagenes/clk_div.png, id=194, 458.71375pt x 405.515pt>
+<Imagenes/clk_div.png, id=212, 458.71375pt x 405.515pt>
 File: Imagenes/clk_div.png Graphic file (type png)
 <use Imagenes/clk_div.png>
-Package pdftex.def Info: Imagenes/clk_div.png  used on input line 240.
+Package pdftex.def Info: Imagenes/clk_div.png  used on input line 260.
 (pdftex.def)             Requested size: 256.07481pt x 226.38763pt.
-<Imagenes/pwm_400.png, id=195, 484.81125pt x 604.2575pt>
+<Imagenes/pwm_400.png, id=213, 484.81125pt x 604.2575pt>
 File: Imagenes/pwm_400.png Graphic file (type png)
 <use Imagenes/pwm_400.png>
-Package pdftex.def Info: Imagenes/pwm_400.png  used on input line 252.
+Package pdftex.def Info: Imagenes/pwm_400.png  used on input line 272.
 (pdftex.def)             Requested size: 256.07481pt x 319.17618pt.
  [8 <./Imagenes/clk_div.png>]
-<Imagenes/func_pwm.png, id=203, 660.4675pt x 373.395pt>
+<Imagenes/func_pwm.png, id=221, 660.4675pt x 373.395pt>
 File: Imagenes/func_pwm.png Graphic file (type png)
 <use Imagenes/func_pwm.png>
-Package pdftex.def Info: Imagenes/func_pwm.png  used on input line 261.
+Package pdftex.def Info: Imagenes/func_pwm.png  used on input line 281.
 (pdftex.def)             Requested size: 256.07481pt x 144.77452pt.
-<Imagenes/sim_impl_120.png, id=205, 2174.1225pt x 420.57124pt>
+<Imagenes/sim_impl_120.png, id=223, 2174.1225pt x 420.57124pt>
 File: Imagenes/sim_impl_120.png Graphic file (type png)
 <use Imagenes/sim_impl_120.png>
-Package pdftex.def Info: Imagenes/sim_impl_120.png  used on input line 271.
+Package pdftex.def Info: Imagenes/sim_impl_120.png  used on input line 291.
 (pdftex.def)             Requested size: 512.14963pt x 99.0717pt.
  [9 <./Imagenes/pwm_400.png> <./Imagenes/func_pwm.png>]
 File: Imagenes/sim_impl_120.png Graphic file (type png)
 <use Imagenes/sim_impl_120.png>
-Package pdftex.def Info: Imagenes/sim_impl_120.png  used on input line 278.
+Package pdftex.def Info: Imagenes/sim_impl_120.png  used on input line 298.
 (pdftex.def)             Requested size: 512.14963pt x 99.0717pt.
-<Imagenes/sim_up.png, id=212, 2167.09625pt x 474.77374pt>
+<Imagenes/sim_up.png, id=230, 2167.09625pt x 474.77374pt>
 File: Imagenes/sim_up.png Graphic file (type png)
 <use Imagenes/sim_up.png>
-Package pdftex.def Info: Imagenes/sim_up.png  used on input line 285.
+Package pdftex.def Info: Imagenes/sim_up.png  used on input line 305.
 (pdftex.def)             Requested size: 512.14963pt x 112.2021pt.
-<Imagenes/sim_down.png, id=213, 2171.11125pt x 462.72874pt>
+<Imagenes/sim_down.png, id=231, 2171.11125pt x 462.72874pt>
 File: Imagenes/sim_down.png Graphic file (type png)
 <use Imagenes/sim_down.png>
-Package pdftex.def Info: Imagenes/sim_down.png  used on input line 292.
+Package pdftex.def Info: Imagenes/sim_down.png  used on input line 312.
 (pdftex.def)             Requested size: 512.14963pt x 109.15079pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
  [10 <./Imagenes/sim_impl_120.png> <./Imagenes/sim_up.png> <./Imagenes/sim_down.png>] [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./TP1.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `TP1.out' has not changed.
-(rerunfilecheck)             Checksum: 5B4D87B5775F5DBB7E62408C3570DB07;1295.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
+(rerunfilecheck)             Checksum: 6AD094009087A9F29DEAC1A449D6D8D9;1605.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
- 10248 strings out of 492167
- 141277 string characters out of 6131559
+ 10254 strings out of 492167
+ 141443 string characters out of 6131559
  268968 words of memory out of 5000000
- 14409 multiletter control sequences out of 15000+600000
+ 14412 multiletter control sequences out of 15000+600000
  13524 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,12n,45p,884b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on TP1.pdf (12 pages, 945697 bytes).
+Output written on TP1.pdf (12 pages, 947128 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 305 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 
