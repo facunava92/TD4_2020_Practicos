@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1591054391 "TP2.tex" "TP2.pdf" "TP2" 1591054392
+["pdflatex"] 1591420308 "TP2.tex" "TP2.pdf" "TP2" 1591420311
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1572595918 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1572595918 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -22,6 +22,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1572595918 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1572595918 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1572595918 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1572595918 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1572595918 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1572595918 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1572595918 32001 6aeea3afe875097b1eb0da29acd61e28 ""
@@ -31,6 +32,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1572595918 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1572595918 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1572595918 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1572595918 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1572595918 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1572595918 26223 0286ca123141cff8dd4956c4576d2ef4 ""
   "/usr/share/texmf-dist/tex/generic/babel/babel.def" 1572595918 81804 3bb5472a03aeb22f281905fcc1b735b2 ""
@@ -91,13 +93,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1588968257 4572998 f9631eebba48c3ee98e5d310044b0a09 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1588968226 8044938 7e75a5c7f1cc50a857e4d4150c862824 ""
   "Imagenes/LOGO.jpg" 1591054310 19747 4772602bbcdd11eac496e15d83f1bf3d ""
-  "TP2.aux" 1591054392 901 868202f9ca5806255b1768fd23b2640c "pdflatex"
-  "TP2.out" 1591054392 50 b111389894c96eaeb574445520ad0411 "pdflatex"
-  "TP2.tex" 1591054388 1706 a793f15c7cdabab642298a55ab40b1a4 ""
-  "TP2.toc" 1591054392 101 4505603637f847b1c273366b52cda7b3 "pdflatex"
+  "TP2.aux" 1591420308 1018 eaadfb69116806d40d22faecb4a4f4ea "pdflatex"
+  "TP2.out" 1591420308 109 c618caee1fd104dcff34ef91c06d708d "pdflatex"
+  "TP2.tex" 1591420308 1915 8e912ef64d7c60b2d8d2c658e16a08df ""
+  "TP2.toc" 1591420308 178 9290836ee3dfd655e98af3ca954fb25a "pdflatex"
   (generated)
-  "TP2.out"
   "TP2.log"
-  "TP2.aux"
   "TP2.toc"
+  "TP2.aux"
   "TP2.pdf"
+  "TP2.out"

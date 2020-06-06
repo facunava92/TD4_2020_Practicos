@@ -73,20 +73,20 @@
 \clearpage
 
 \section{Introducción}
-	El siguiente informe documenta los procedimientos realizados para el diseño digital de un controlador de un motor mediante la lectura de un encoder, se utilizar parte de las practicas adquiridas en los prácticos de entrenamiento y se profundiza en los conocimientos sobre encoders o codificadores rotativos. 
+	El siguiente informe documenta los procedimientos realizados para el diseño digital de un controlador de un motor mediante la lectura de un encoder, se utilizar parte de las prácticas adquiridas en los prácticos de entrenamiento y se profundiza en los conocimientos sobre encoders o codificadores rotativos. 
 
 \section{Marco Teórico}
 	\subsection{Encoder}
-	Un ``encoder rotatorio", también llamado codificador del eje o generador de pulsos, es un dispositivo electromecánico capaz de convertir la posición angular de un eje a un código digital. Estos dispositivos se añaden suelen ser añadidos a motores de corriente continua para convertir el movimiento mecánico en pulsos digitales que pueden ser interpretado por un sistema electrónico de control. 
+	Un ``encoder rotatorio", también llamado codificador del eje o generador de pulsos, es un dispositivo electromecánico capaz de convertir la posición angular de un eje a un código digital. Estos dispositivos suelen ser añadidos a motores de corriente continua para convertir el movimiento mecánico en pulsos digitales que pueden ser interpretado por un sistema electrónico de control. 
 
 	Encuentran aplicación dentro de los campos de la robótica, lentes fotográficas, aplicaciones industriales que requieran medición angular, etc.
 
 	Los motores DC tienen un comportamiento complejo en cuanto a control de posición y de la velocidad, el cual no es lineal y depende mucho de la carga que soporten, es por este motivo que surge la necesidad de la aplicación de un encoder que permita conocer y asegurar la correcta posición del eje.
 
-	Según su diseño y funcionalidad existen distintos tipos de encoders. Los tipos mas comunes se pueden clasificar en absolutos y relativos.
+	Según su diseño y funcionalidad existen distintos tipos de encoders. Los tipos más comunes se pueden clasificar en absolutos y relativos.
 
 	\subsubsection{Encoder Absoluto}
-	Un encoder absoluto es un dispositivo que mide la posición absoluta angular. Esta diseñado para proporcionar un código digital de acuerdo a la posición angular de la flecha, como se ve en la imagen \textcolor{blue}{\textbf{\ref{fig:encoder_absoluto}}}, una vuelta esta dividida en un numero especifico de divisiones o marcas y cada una de ellas se les asigna físicamente un código digital único. Es decir que tiene un código único para cada posición. 
+	Un encoder absoluto es un dispositivo que mide la posición absoluta angular. Esta diseñado para proporcionar un código digital de acuerdo a la posición angular de la flecha, como se ve en la imagen \textcolor{blue}{\textbf{\ref{fig:encoder_absoluto}}}, una vuelta esta dividida en un número especifico de divisiones o marcas y cada una de ellas se les asigna físicamente un código digital único, es decir, que tiene un código único para cada posición. 
 
 \begin{figure}[h]
 	\centering
@@ -96,11 +96,11 @@
 \end{figure} 
 
 \subsubsection{Encoder Incremental}
- El tipo común de encoder incremental consiste de un disco solidario al eje del motor que contiene un patrón de marcas o ranuras que son codificados por un interruptor óptico generando pulsos eléctricos cada vez que el patrón del disco interrumpe y luego permite el paso de luz hacia el interruptor óptico a medido que el disco gira. 
+ El tipo común de encoder incremental consiste de un disco solidario al eje del motor que contiene un patrón de marcas o ranuras que son codificados por un interruptor óptico generando pulsos eléctricos cada vez que el patrón del disco interrumpe y luego permite el paso de luz hacia el interruptor óptico a medida que el disco gira. 
 
- Este tipo de encoders determina la posición de rotación de acuerdo  aun numero especifico de pulsos por vuelta (PPV), mediante el conteo de esos pulsos a medida que el encoder gira, es entonces que la PPV es un factor de resolución y es el aspecto mas importante a la hora de seleccionar un encoder incremental.  La resolución de un encoder típico es del orden de 1000 pulsos por revolución.
+ Este tipo de encoders determina la posición de rotación de acuerdo a un número específico de pulsos por vuelta (PPV), mediante el conteo de esos pulsos a medida que el encoder gira, es entonces que la PPV es un factor de resolución y es el aspecto más importante a la hora de seleccionar un encoder incremental.  La resolución de un encoder típico es del orden de 1000 pulsos por revolución.
 
- Desde un encoder incremental no se puede determinar la posición angular absoluta del eje. Para poder determinar la posición relativa a un punto de referencia (cero), el encoder debe incluir una señal adicional que genera un pulso por revolución, denominada ``indice" (Z).
+ Desde un encoder incremental no se puede determinar la posición angular absoluta del eje. Para poder determinar la posición relativa a un punto de referencia (cero), el encoder debe incluir una señal adicional que genera un pulso por revolución, denominada ``Indice" (Z).
 
 \begin{figure}[h]
 	\centering
@@ -110,9 +110,9 @@
 \end{figure} 
 
 \subsubsection{Encoder en cuadratura}
-Corresponde a un tipo de encoder incremental que utiliza dos sensores ópticos posicionados con un desplazamiento de 1/4 de ranura el uno del otro, generando dos señales de pulsos digitales desfasadas en 90 grados o en ``cuadratura". Estas señales se llaman comúnmente $A$ y $B$. Mediante ellas es posible suministrar los datos de posición, velocidad y dirección de rotación del eje.
+Corresponde a un tipo de encoder incremental que utiliza dos sensores ópticos posicionados con un desplazamiento de 1/4 de ranura el uno del otro, generando dos señales de pulsos digitales desfasadas en 90 grados o en ``cuadratura". Estas señales se llaman comúnmente $A$ y $B$, mediante ellas es posible suministrar los datos de posición, velocidad y dirección de rotación del eje.
 
-Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``1" antes que B) se establece el convenio que el eje esta rotando en sentido horario, mientras que si B adelanta a A, el sentido anti horario, como se ve en la figura \textcolor{blue}{\textbf{\ref{fig:encoder_cuadratura}}}.
+Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``1" antes que B) se establece por convenio que el eje esta rotando en sentido horario, mientras que si B adelanta a A, el sentido es anti horario, como se ve en la figura \textcolor{blue}{\textbf{\ref{fig:encoder_cuadratura}}}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Imagenes/encoder_cuadratura.jpg}
@@ -124,17 +124,17 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 \section{Desarrollo}
 
 	\subsection{Estructura del proyecto}
-	El proyecto fue desarrollado en el SW Vivado 2019.2.1, ya que se utilizo la plataforma Basys3.
+	El proyecto fue desarrollado en el SW Vivado 2019.2.1, ya que se utilizo la plataforma de entrenamiento de Digilent Basys3.
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{Imagenes/estructura.png}
-		\caption{Arbol del proyecto}
+		\caption{Árbol del proyecto}
 		\label{fig:proyecto_vivado}
 	\end{figure} 
 
 	\subsection{Debouncer}
-	Siempre existe la posibilidad de ruido externo que se puede filtrar dentro de la señal, en este caso se plantea un filtro digital a través de un registro, el cual podria ser parametrizado en caso que se requiera un mayor tiempo para estabilizar la señal.
+	Siempre existe la posibilidad de ruido externo que se puede introducir dentro de la señal, en este caso se plantea un filtro digital a través de un registro, el cual podría ser parametrizado en caso que se requiera un tiempo mayor para estabilizar la señal.
 
 	\begin{figure}[H]
 		\centering
@@ -154,12 +154,12 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 
 
 		\subsection{Divisor de frecuencia y multiplexado de displays}
-			A partir de la frecuencia de la placa $f_1$ en 100 MHz, se pretende utilizar para realizar el multiplexado de los 4 displays necesarios para visualizar la cuenta hasta 5759, como el ojo no es capaz de percibir el encendido y apagado a alta velocidad, fenómeno conocido como persistencia de la visión, engañando al espectador en creer que el los displays se encuentran encendido en simultáneo.
+			A partir de la frecuencia de la placa $f_1$ en 100 MHz, se pretende utilizarla para realizar el multiplexado de los 4 displays necesarios para visualizar la cuenta hasta 5759, como el ojo no es capaz de percibir el encendido y apagado a alta velocidad, fenómeno conocido como persistencia de la visión, engañando al espectador en creer que el los displays se encuentran encendido en simultáneo.
 		\begin{equation}
 			f_{mux} = \frac{f_{in}}{2^n} = \frac{100Mhz}{2^{17}} \approx 800 \Hz
 		\end{equation}
 
-			Con la frecuencia de 100 Mhz, es necesario un registro de 19 bits de longitud, con los 2 MSB se multiplexa la salida de los display a una velocidad de 800 Hz.
+			Con la frecuencia de 100 Mhz, es necesario un registro de 19 bits de longitud, con los 2 MSB se multiplexa la salida de los display a una velocidad aproximada de 800 Hz.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.5\textwidth]{Imagenes/mux.png}
@@ -169,11 +169,11 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 		
 		
 		\subsection{Decodificador de cuadratura}
-			El decodificador del encoder en cuadratura se plantea como una máquina de estado que detecta el sentido de acuerdo si la señal A se adelanta a señal B o su inversa. Por cada transición del nivel bajo hacia alto o bajo se produce un pulso. Como se dijo previamente, una características principal de este tipo de encoder es su resolución, el encoder utilizado tiene una resolución de 1440 ppv, la cual se multiplica por 4, correspondiendo a un ciclo entero entre las señales en cuadratura A y B, otorgando una mayor resolución de 5760 ppv, haciendo necesario un contador de modulo 5760.	
+			El decodificador del encoder en cuadratura se plantea como una máquina de estado que detecta el sentido de acuerdo si la señal A se adelanta a señal B o su inversa. Por cada transición del nivel bajo hacia alto o bajo se produce un pulso. Como se dijo previamente, una características principal de este tipo de encoder es su resolución, el encoder utilizado tiene una resolución de 1440 ppv, la cual se multiplica por 4, correspondiendo a un ciclo entero entre las señales en cuadratura A y B, otorgando una mayor resolución de 5760 ppv, haciendo necesario un contador de módulo 5760.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.6\textwidth]{Imagenes/mealy.jpg}
-			\caption{Maquina de Mealy}
+			\caption{Máquina de Mealy}
 			\label{fig:mealy}
 		\end{figure} 
 		
@@ -196,7 +196,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 			\label{fig:encoder_real}
 		\end{figure} 
 
-			Para el contador de modulo 5760, se usan los pulsos que se generan en el detector de cuadratura, de acuerdo si la señal es \textit{up} o \textdown{down}, el valor de contador asciende o desciende respectivamente. Como se ve en la figura \textcolor{blue}{\textbf{\ref{fig:M}}}, si en algún momento se acierta uno de los pulsos y además concuerda con el valor parametrizable \textit{M} o \textit{M\_n}, el valor de registro se setea a 0.
+			Para el contador de módulo 5760, se usan los pulsos que se generan en el detector de cuadratura, de acuerdo si la señal es \textit{up} o \textit{down}, el valor de contador asciende o desciende respectivamente. Como se ve en la figura \textcolor{blue}{\textbf{\ref{fig:M}}}, si en algún momento se acierta uno de los pulsos y además concuerda con el valor parametrizable \textit{M} o \textit{M\_n}, el valor de registro se setea a 0.
 
 		\begin{figure}[H]
 			\centering
@@ -205,7 +205,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 			\label{fig:M}
 		\end{figure} 
 
-		Para los displays en un principio se orientó la solución utilizando un conversor binario a BCD, el cual consiste en un registro de desplazamiento con una adición de un entero de valor 6 de acuerdo si se cumplen ciertas condiciones, el mismo se implemento y se vio que tenia el resultado correcto, sin embargo se trataba de una estructura que consumía muchos recursos y necesita de muchos pulsos de clock para convertir una entrada serie, a una salida paralela de 12 bit para los 4 displays, caso por el cual se implementa un contador simular al planteado en los ejercicios de entrenamiento (10).
+		Para los displays en un principio se orientó la solución utilizando un conversor binario a BCD, el cual consiste en un registro de desplazamiento con una adición de un entero de valor 6 de acuerdo si se cumplen ciertas condiciones, el mismo se implementó y se vio que tenia el resultado correcto, sin embargo se trataba de una estructura que consumía muchos recursos y necesita de muchos pulsos de clock para convertir una entrada serie, a una salida paralela de 12 bit para los 4 displays, caso por el cual se implementa un contador similar al planteado en los ejercicios de entrenamiento (10).
 
 		\begin{figure}[H]
 			\centering
@@ -253,7 +253,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 			\label{fig:pwm_400}
 		\end{figure} 
 
-		Finalmente, se pide que si los pasos entre la posición actual del motor y la de referencia difieren en mas/menos 100, la velocidad es máxima, esto se consigue con la siguiente descripción.
+		Finalmente, se pide que si los pasos entre la posición actual del motor y la de referencia difieren en $\pm 100$, la velocidad es máxima, esto se consigue con la siguiente descripción.
 
 		\begin{figure}[H]
 			\centering
@@ -262,7 +262,7 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 			\label{fig:func_pwm}
 		\end{figure} 
 
-		El funcionamiento de \textcolor{blue}{\textbf{\ref{fig:func_pwm}}} es el siguiente, \textit{pos} es derivado del modulo contador y \textit{ref} de los switchs y es variable con estas. Dependiendo cual sea mayor a la otra determinara el sentido de giro, ya sea clockwise(cw) o anticlockwise(acw). Por ultimo se busca la magnitud de separación entre ambas posiciones, si es mayor de 100 se elegirá un pwm mas cercano a la máxima velocidad respetando el sentido de giro, caso que la posición actual sea igual a la referencia, tanto cw y acw valen '0' y el duty queda al 50\% (torque).
+		El funcionamiento del código en  \textcolor{blue}{\textbf{\ref{fig:func_pwm}}} es el siguiente, \textit{pos} es derivado del módulo contador y \textit{ref} de los switchs y es variable con estas. Dependiendo cual sea mayor a la otra determinara el sentido de giro, ya sea clockwise(cw) o anticlockwise(acw). Por ultimo se busca la magnitud de separación entre ambas posiciones, si es mayor de 100 se elegirá un pwm mas cercano a la máxima velocidad respetando el sentido de giro, caso que la posición actual sea igual a la referencia, tanto cw y acw valen '0' y el duty queda al 50\% (torque).
 
 		\subsection{Simulaciones}
 		\begin{figure}[H]
@@ -294,8 +294,11 @@ Usualmente, si la señal A adelanta a B (la señal A toma un valor lógico de ``
 		\end{figure} 
 
 		\subsection{Multimedia}
-		Se adjunta un link de un vídeo da mostrativo. \\
-		\url{https://youtu.be/4qJg4IgcLNk}
+		Se adjunta un dos links de unos vídeos demostrativos: 
+		\begin{itemize}
+			\item Presentación: \url{https://youtu.be/4qJg4IgcLNk}
+			\item Demo: \url{https://youtu.be/wE91018Mobk}
+		\end{itemize}
 	\section{Control de lazo de velocidad de un motor C.C.}
 	\section{Control de motor paso a paso de velocidad a lazo abierto con rampa de aceleración y desale ración parametrizable}
 \end{document}

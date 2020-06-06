@@ -12,8 +12,8 @@
 \contentsline {subsection}{\numberline {3.4}Decodificador de cuadratura}{5}{subsection.3.4}% 
 \contentsline {subsection}{\numberline {3.5}Contador 0 - 5159}{6}{subsection.3.5}% 
 \contentsline {subsection}{\numberline {3.6}PWM}{7}{subsection.3.6}% 
-\contentsline {subsubsection}{\numberline {3.6.1}Frecuencia del PWM}{7}{subsubsection.3.6.1}% 
-\contentsline {subsection}{\numberline {3.7}Simulaciones}{9}{subsection.3.7}% 
+\contentsline {subsubsection}{\numberline {3.6.1}Frecuencia del PWM}{8}{subsubsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.7}Simulaciones}{10}{subsection.3.7}% 
 \contentsline {subsection}{\numberline {3.8}Multimedia}{10}{subsection.3.8}% 
-\contentsline {section}{\numberline {4}Control de lazo de velocidad de un motor C.C.}{10}{section.4}% 
-\contentsline {section}{\numberline {5}Control de motor paso a paso de velocidad a lazo abierto con rampa de aceleraci\IeC {\'o}n y desale raci\IeC {\'o}n parametrizable}{10}{section.5}% 
+\contentsline {section}{\numberline {4}Control de lazo de velocidad de un motor C.C.}{11}{section.4}% 
+\contentsline {section}{\numberline {5}Control de motor paso a paso de velocidad a lazo abierto con rampa de aceleraci\IeC {\'o}n y desale raci\IeC {\'o}n parametrizable}{11}{section.5}% 
