@@ -1,3 +1,16 @@
+----------------------------------------------------------------------------------
+-- UNIVERSIDAD TECNOLÓGICA NACIONAL - FACULTAD REGIONAL CORDOBA
+-- Carrera: INGENIERIA ELECTRÓNICA.
+-- Asignatura: TÉCNICAS DIGITALES IV (ELECTIVA).
+-- Año: 2020.
+-- Grupo: 5
+-- Integrantes:
+--      NAVARRO, Facundo		Leg. Nº:63809
+-- Fecha de Entrega: 06/06/2020.
+-- Hardware utilizado: Basys3
+-- UCF utilizado: Basys3.xdc
+----------------------------------------------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
@@ -56,7 +69,7 @@ begin
     -- Generate Horizontal, Vertical counters and the Sync signals
     ---------------------------------------------------------------
     -- Horizontal counter
-    process (clk)
+    process (clk, h_count_next)
     begin
         if (rising_edge(clk)) then
             if (h_count_reg = (H_MAX - 1)) then
@@ -68,7 +81,7 @@ begin
     end process;
     
     -- Vertical counter
-    process (clk)
+    process (clk, v_count_next)
     begin
         if (rising_edge(clk)) then
             if ((h_count_reg = (H_MAX - 1)) and (v_count_reg = (V_MAX - 1))) then

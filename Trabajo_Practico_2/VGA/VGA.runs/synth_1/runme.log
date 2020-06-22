@@ -15,14 +15,14 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 153446 
+INFO: Helper process launched with PID 27624 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2034.207 ; gain = 202.688 ; free physical = 4486 ; free virtual = 49558
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2033.590 ; gain = 203.719 ; free physical = 5644 ; free virtual = 49994
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'VGA' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/VGA.vhd:14]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0.vhd:83]
-INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at '/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:74' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'VGA' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/VGA.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0.vhd:96]
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at '/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:87' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:96]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 10.125000 - type: double 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
@@ -71,18 +71,18 @@ INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [/run/media/fnavarro
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: 0 - type: bool 
-INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:125]
-INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:187]
-INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:194]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (1#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:83]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'vga_sync' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/vga_sync.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'vga_sync' (3#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/vga_sync.vhd:14]
-INFO: [Synth 8-638] synthesizing module 'graphic_unit' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/graphic_unit.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'graphic_unit' (4#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/graphic_unit.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'VGA' (5#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/VGA.vhd:14]
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:138]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:200]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:207]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (1#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/vga_sync.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (3#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/vga_sync.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'graphic_unit' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/graphic_unit.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'graphic_unit' (4#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/graphic_unit.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (5#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/VGA.vhd:27]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2095.957 ; gain = 264.438 ; free physical = 4516 ; free virtual = 49590
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2095.340 ; gain = 265.469 ; free physical = 5678 ; free virtual = 50032
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -95,12 +95,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2095.957 ; gain = 264.438 ; free physical = 4504 ; free virtual = 49580
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2098.309 ; gain = 268.438 ; free physical = 5676 ; free virtual = 50031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2095.957 ; gain = 264.438 ; free physical = 4504 ; free virtual = 49580
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2098.309 ; gain = 268.438 ; free physical = 5677 ; free virtual = 50032
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2103.895 ; gain = 0.000 ; free physical = 4497 ; free virtual = 49573
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2104.246 ; gain = 0.000 ; free physical = 5671 ; free virtual = 50026
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -114,31 +114,31 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_propImpl
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.707 ; gain = 0.000 ; free physical = 4418 ; free virtual = 49491
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.059 ; gain = 0.000 ; free physical = 5569 ; free virtual = 49941
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2261.707 ; gain = 0.000 ; free physical = 4417 ; free virtual = 49490
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.059 ; gain = 0.000 ; free physical = 5569 ; free virtual = 49941
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4497 ; free virtual = 49571
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5621 ; free virtual = 50003
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4497 ; free virtual = 49571
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5622 ; free virtual = 50003
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4498 ; free virtual = 49572
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5622 ; free virtual = 50003
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "BALL_ROM[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'rgb_s_reg' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/graphic_unit.vhd:259]
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_s_reg' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/graphic_unit.vhd:271]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4487 ; free virtual = 49564
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5612 ; free virtual = 49996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -226,7 +226,7 @@ INFO: [Synth 8-3886] merging instance 'graphic_circuit/delta_x_reg_reg[7]' (FDCE
 INFO: [Synth 8-3886] merging instance 'graphic_circuit/delta_x_reg_reg[8]' (FDCE) to 'graphic_circuit/delta_x_reg_reg[9]'
 INFO: [Synth 8-3886] merging instance 'graphic_circuit/delta_x_reg_reg[9]' (FDCE) to 'graphic_circuit/delta_x_reg_reg[10]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4509 ; free virtual = 49557
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5591 ; free virtual = 49983
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -238,13 +238,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4382 ; free virtual = 49440
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5476 ; free virtual = 49866
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4329 ; free virtual = 49416
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5469 ; free virtual = 49859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -256,7 +256,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4524 ; free virtual = 49610
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5467 ; free virtual = 49858
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -280,13 +280,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4481 ; free virtual = 49588
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5462 ; free virtual = 49856
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4481 ; free virtual = 49588
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5462 ; free virtual = 49856
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -305,25 +305,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4481 ; free virtual = 49588
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5459 ; free virtual = 49853
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4481 ; free virtual = 49588
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5459 ; free virtual = 49853
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4481 ; free virtual = 49588
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5459 ; free virtual = 49853
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4481 ; free virtual = 49588
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5459 ; free virtual = 49853
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -368,18 +368,18 @@ Report Instance Areas:
 |5     |  vga_sync_unit   |vga_sync          |   166|
 +------+------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4481 ; free virtual = 49588
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5459 ; free virtual = 49853
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2261.707 ; gain = 264.438 ; free physical = 4533 ; free virtual = 49640
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 2261.707 ; gain = 430.188 ; free physical = 4533 ; free virtual = 49640
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2262.059 ; gain = 268.438 ; free physical = 5512 ; free virtual = 49906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2262.059 ; gain = 432.188 ; free physical = 5512 ; free virtual = 49906
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.707 ; gain = 0.000 ; free physical = 4528 ; free virtual = 49636
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2262.059 ; gain = 0.000 ; free physical = 5515 ; free virtual = 49910
 INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.707 ; gain = 0.000 ; free physical = 4551 ; free virtual = 49660
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.059 ; gain = 0.000 ; free physical = 5538 ; free virtual = 49922
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   LD => LDCE: 3 instances
@@ -387,10 +387,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 48 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:51 . Memory (MB): peak = 2261.707 ; gain = 683.039 ; free physical = 4678 ; free virtual = 49788
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.707 ; gain = 0.000 ; free physical = 4678 ; free virtual = 49788
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 2262.059 ; gain = 683.133 ; free physical = 5687 ; free virtual = 50063
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2262.059 ; gain = 0.000 ; free physical = 5687 ; free virtual = 50063
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.runs/synth_1/VGA.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file VGA_utilization_synth.rpt -pb VGA_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 30 21:09:00 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  6 17:45:06 2020...

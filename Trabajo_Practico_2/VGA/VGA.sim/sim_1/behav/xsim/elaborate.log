@@ -1,6 +1,6 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 95b8148bc8114d3e9ab5c535b2d22be9 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot vga_test_behav xil_defaultlib.vga_test -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 95b8148bc8114d3e9ab5c535b2d22be9 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_VGA_behav xil_defaultlib.tb_VGA -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -24,5 +24,6 @@ Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_0_clk_wiz [clk_wi
 Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_0 [clk_wiz_0_default]
 Compiling architecture arch of entity xil_defaultlib.vga_sync [vga_sync_default]
 Compiling architecture arch of entity xil_defaultlib.graphic_unit [graphic_unit_default]
-Compiling architecture arch of entity xil_defaultlib.vga_test
-Built simulation snapshot vga_test_behav
+Compiling architecture arch of entity xil_defaultlib.VGA [vga_default]
+Compiling architecture tb_arch of entity xil_defaultlib.tb_vga
+Built simulation snapshot tb_VGA_behav

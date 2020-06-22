@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1591420308 "TP2.tex" "TP2.pdf" "TP2" 1591420311
+["pdflatex"] 1591477864 "TP2.tex" "TP2.pdf" "TP2" 1591477864
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1572595918 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1572595918 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -93,13 +93,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1588968257 4572998 f9631eebba48c3ee98e5d310044b0a09 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1588968226 8044938 7e75a5c7f1cc50a857e4d4150c862824 ""
   "Imagenes/LOGO.jpg" 1591054310 19747 4772602bbcdd11eac496e15d83f1bf3d ""
-  "TP2.aux" 1591420308 1018 eaadfb69116806d40d22faecb4a4f4ea "pdflatex"
-  "TP2.out" 1591420308 109 c618caee1fd104dcff34ef91c06d708d "pdflatex"
-  "TP2.tex" 1591420308 1915 8e912ef64d7c60b2d8d2c658e16a08df ""
-  "TP2.toc" 1591420308 178 9290836ee3dfd655e98af3ca954fb25a "pdflatex"
+  "Imagenes/barras.png" 1591473875 4081 bb3efd58e1cbafa517df28af51a00238 ""
+  "Imagenes/estructura.png" 1591476787 27805 03768a057f3a452b8090e3a02c4066c2 ""
+  "TP2.aux" 1591477858 2177 e0ccb1191017a6122efecc3db47e7a19 "pdflatex"
+  "TP2.out" 1591477858 498 26b5fca82f1d8c233520671375757320 "pdflatex"
+  "TP2.tex" 1591477863 3632 30674a4a2e186446582172886e3c6ddf ""
+  "TP2.toc" 1591477858 695 42f2d827859db4c71171a057407562e8 "pdflatex"
   (generated)
   "TP2.log"
   "TP2.toc"
-  "TP2.aux"
   "TP2.pdf"
   "TP2.out"
+  "TP2.aux"

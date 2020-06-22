@@ -1,0 +1,422 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Mon Jun 22 13:37:43 2020
+# Process ID: 23379
+# Current directory: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.runs/synth_1
+# Command line: vivado -log i2c.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2c.tcl
+# Log file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.runs/synth_1/i2c.vds
+# Journal file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source i2c.tcl -notrace
+Command: synth_design -top i2c -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23694 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2034.211 ; gain = 202.719 ; free physical = 5807 ; free virtual = 49528
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'i2c' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/i2c.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'debounce' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/debounce.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/debounce.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'disp_mux' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/disp_mux.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'bin2sseg' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/bin2sseg.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'bin2sseg' (2#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/bin2sseg.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'disp_mux' (3#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/disp_mux.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'i2c' (4#1) [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/i2c.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2095.961 ; gain = 264.469 ; free physical = 5795 ; free virtual = 49514
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2095.961 ; gain = 264.469 ; free physical = 5800 ; free virtual = 49517
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2095.961 ; gain = 264.469 ; free physical = 5800 ; free virtual = 49517
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2095.961 ; gain = 0.000 ; free physical = 5793 ; free virtual = 49511
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/i2c_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/i2c_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2255.742 ; gain = 0.000 ; free physical = 5683 ; free virtual = 49421
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2255.742 ; gain = 0.000 ; free physical = 5683 ; free virtual = 49420
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2255.742 ; gain = 424.250 ; free physical = 5739 ; free virtual = 49503
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2255.742 ; gain = 424.250 ; free physical = 5739 ; free virtual = 49503
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2255.742 ; gain = 424.250 ; free physical = 5739 ; free virtual = 49503
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'debounce'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'i2c'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                               00 |                               00
+                   wait1 |                               01 |                               11
+                     one |                               10 |                               10
+                   wait0 |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'debounce'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle | 0000000000000000000000000000000000001 |                           000000
+                start_wr | 0000000000000000000000000000000000010 |                           000001
+            scl_begin_wr | 0000000000000000000000000000000000100 |                           000010
+                data1_wr | 0000000000000000000000000000000001000 |                           000011
+                data2_wr | 0000000000000000000000000000000010000 |                           000100
+                data3_wr | 0000000000000000000000000000000100000 |                           000101
+                data4_wr | 0000000000000000000000000000001000000 |                           000110
+                 ack1_wr | 0000000000000000000000000000010000000 |                           000111
+                 ack2_wr | 0000000000000000000000000000100000000 |                           001000
+                 ack3_wr | 0000000000000000000000000001000000000 |                           001001
+                 ack4_wr | 0000000000000000000000000010000000000 |                           001010
+                     sby | 0000000000000000000000000100000000000 |                           001011
+                start_rd | 0000000000000000000000001000000000000 |                           001100
+            scl_begin_rd | 0000000000000000000000010000000000000 |                           001101
+                addr1_rd | 0000000000000000000000100000000000000 |                           001110
+                addr2_rd | 0000000000000000000001000000000000000 |                           001111
+                addr3_rd | 0000000000000000000010000000000000000 |                           010000
+                addr4_rd | 0000000000000000000100000000000000000 |                           010001
+                 ack1_ad | 0000000000000000001000000000000000000 |                           010010
+                 ack2_ad | 0000000000000000010000000000000000000 |                           010011
+                 ack3_ad | 0000000000000000100000000000000000000 |                           010100
+                 ack4_ad | 0000000000000001000000000000000000000 |                           010101
+                data1_rd | 0000000000000010000000000000000000000 |                           010110
+                data2_rd | 0000000000000100000000000000000000000 |                           010111
+                data3_rd | 0000000000001000000000000000000000000 |                           011000
+                data4_rd | 0000000000010000000000000000000000000 |                           011001
+                   nack1 | 0000000000100000000000000000000000000 |                           011110
+                   nack2 | 0000000001000000000000000000000000000 |                           011111
+                   nack3 | 0000000010000000000000000000000000000 |                           100000
+                   nack4 | 0000000100000000000000000000000000000 |                           100001
+                 scl_end | 0000001000000000000000000000000000000 |                           100010
+                    stop | 0000010000000000000000000000000000000 |                           100011
+                    turn | 0000100000000000000000000000000000000 |                           100100
+                 ack1_rd | 0001000000000000000000000000000000000 |                           011010
+                 ack2_rd | 0010000000000000000000000000000000000 |                           011011
+                 ack3_rd | 0100000000000000000000000000000000000 |                           011100
+                 ack4_rd | 1000000000000000000000000000000000000 |                           011101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'i2c'
+WARNING: [Synth 8-327] inferring latch for variable 'd3_next_reg' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/i2c.vhd:131]
+WARNING: [Synth 8-327] inferring latch for variable 'd2_next_reg' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/i2c.vhd:132]
+WARNING: [Synth 8-327] inferring latch for variable 'd1_next_reg' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/i2c.vhd:133]
+WARNING: [Synth 8-327] inferring latch for variable 'd0_next_reg' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/i2c.vhd:134]
+WARNING: [Synth 8-327] inferring latch for variable 'dp_next_reg' [/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/i2c.vhd:135]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2255.742 ; gain = 424.250 ; free physical = 5731 ; free virtual = 49495
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  37 Input     37 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 7     
+	   2 Input     22 Bit        Muxes := 4     
+	   4 Input     22 Bit        Muxes := 1     
+	  37 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	  37 Input      9 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 1     
+	  37 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	  37 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 2     
+	  37 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module i2c 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  37 Input     37 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 7     
+	  37 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	  37 Input      9 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 1     
+	  37 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  37 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	  37 Input      1 Bit        Muxes := 10    
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 4     
+	   4 Input     22 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module disp_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\data_reg_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2255.742 ; gain = 424.250 ; free physical = 5689 ; free virtual = 49436
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2255.742 ; gain = 424.250 ; free physical = 5495 ; free virtual = 49281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 2255.742 ; gain = 424.250 ; free physical = 5517 ; free virtual = 49298
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 2260.758 ; gain = 429.266 ; free physical = 5519 ; free virtual = 49300
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop sclk_reg_reg is being inverted and renamed to sclk_reg_reg_inv.
+INFO: [Synth 8-5365] Flop sdat_reg_reg is being inverted and renamed to sdat_reg_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2266.695 ; gain = 435.203 ; free physical = 5338 ; free virtual = 49247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2266.695 ; gain = 435.203 ; free physical = 5338 ; free virtual = 49247
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2266.695 ; gain = 435.203 ; free physical = 5337 ; free virtual = 49247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2266.695 ; gain = 435.203 ; free physical = 5337 ; free virtual = 49247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2266.695 ; gain = 435.203 ; free physical = 5337 ; free virtual = 49247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2266.695 ; gain = 435.203 ; free physical = 5337 ; free virtual = 49247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |    24|
+|4     |LUT2   |    14|
+|5     |LUT3   |    20|
+|6     |LUT4   |    27|
+|7     |LUT5   |    31|
+|8     |LUT6   |    42|
+|9     |FDCE   |    99|
+|10    |FDPE   |     4|
+|11    |FDRE   |    43|
+|12    |LD     |    17|
+|13    |IBUF   |     4|
+|14    |IOBUF  |     1|
+|15    |OBUF   |    15|
+|16    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+---------+------+
+|      |Instance      |Module   |Cells |
++------+--------------+---------+------+
+|1     |top           |         |   354|
+|2     |  btn_db_unit |debounce |   104|
+|3     |  disp_driver |disp_mux |    41|
++------+--------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2266.695 ; gain = 435.203 ; free physical = 5337 ; free virtual = 49247
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 2266.695 ; gain = 275.422 ; free physical = 5390 ; free virtual = 49300
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2266.703 ; gain = 435.203 ; free physical = 5390 ; free virtual = 49300
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.703 ; gain = 0.000 ; free physical = 5395 ; free virtual = 49291
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2298.711 ; gain = 0.000 ; free physical = 5422 ; free virtual = 49319
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  LD => LDCE: 17 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:58 . Memory (MB): peak = 2298.711 ; gain = 720.039 ; free physical = 5553 ; free virtual = 49451
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2298.711 ; gain = 0.000 ; free physical = 5554 ; free virtual = 49451
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.runs/synth_1/i2c.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file i2c_utilization_synth.rpt -pb i2c_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 22 13:38:57 2020...

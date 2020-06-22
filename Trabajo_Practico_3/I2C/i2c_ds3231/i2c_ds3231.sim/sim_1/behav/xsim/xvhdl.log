@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sources_1/new/i2c.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2c'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.srcs/sim_1/new/tb_i2c_a.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_i2c_a'

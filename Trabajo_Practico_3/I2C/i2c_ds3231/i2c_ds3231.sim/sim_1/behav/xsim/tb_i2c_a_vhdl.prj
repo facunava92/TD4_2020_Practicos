@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../i2c_ds3231.srcs/sources_1/new/bin2sseg.vhd" \
+"../../../../i2c_ds3231.srcs/sources_1/new/debounce.vhd" \
+"../../../../i2c_ds3231.srcs/sources_1/new/disp_mux.vhd" \
+"../../../../i2c_ds3231.srcs/sources_1/new/i2c.vhd" \
+"../../../../i2c_ds3231.srcs/sim_1/new/tb_i2c_a.vhd" \
+
+# Do not sort compile order
+nosort

@@ -75,11 +75,11 @@
 \section{Introducción}
 En el siguiente trabajo práctico se investigan e implementan protocolos de comunicación síncronos, en donde $R_X$ y $T_X$ operan en conjunto con un señal de $clock$, los cuales son $I^{2}C$, $SPI$, $PS2$.
 
-\section{Desarrollo}
-	\subsection{Personal system version 2 (PS2)}
+\section{Personal system version 2 (PS2)}
 
+\section{Serial peripheral interface (SPI)}
 
-	\subsection{Inter intergrated circuit ($I^{2}C$)}
+\section{Inter intergrated circuit ($I^{2}C$)}
 		Es un bus serial de comunicación de 8 bits entre circuitos integrados que se encuentran próximos entre ellos (normalmente en la misma placa). Utiliza tan solo dos cables (mas GND de referencia) y tiene cuatro modos estandarizados de velocidad
 		\begin{itemize} \itemsep0em
 			\item standard (100 kbps)
@@ -94,17 +94,16 @@ En el siguiente trabajo práctico se investigan e implementan protocolos de comu
 
 		El número de dispositivos compartiendo el mismo bus puede alcanzar hasta 128 (direcciones de 7-bit) o 1024 (direcciones de 10-bit). Más de un \textit{master} es permitido, el tal caso el protocolo $I^{2}C$ administra el bus, considerando como master principal al primero que ponga el bajo el voltaje de \textit{SDA}.
 
-		\subsubsection{Operación de la interfaz $I^{2}C$}
-			El diagrama de tiempos de una típica transferencia de datos se muestra en la figura \textcolor{blue}{\textbf{\ref{fig:basic_timing}}}. Ambas lineas estan en alto cuando el bus esta en estado ``inactivo". El master inicia la transferencia creando una condición de arranque (S), en la cual SDA cambia de alto a bajo mientras que SCL se mantiene en alto. Luego genera la señal clock sobre SCL. Dependiendo del tipo de transacción, o el maestro o el esclavo seleccionado introducen datos sobre SDA. Los datos deben ser estables cuando SCL este en alto y el cambio de dato solo puede ocurrir cuando SCL este en bajo. Estas definiciones aseguran que tanto las condiciones de arranque como parada nunca puedan ser confundidas como datos.
+		\subsection{Operación de la interfaz $I^{2}C$}
+			El diagrama de tiempos de una típica transferencia de datos se muestra en la figura \textcolor{blue}{\textbf{\ref{fig:basic_timing}}}. Ambas líneas están en alto cuando el bus esta en estado ``inactivo". El master inicia la transferencia creando una condición de arranque (S), en la cual SDA cambia de alto a bajo mientras que SCL se mantiene en alto. Luego genera la señal clock sobre SCL. Dependiendo del tipo de transacción, o el maestro o el esclavo seleccionado introducen datos sobre SDA. Los datos deben ser estables cuando SCL este en alto y el cambio de dato solo puede ocurrir cuando SCL este en bajo. Estas definiciones aseguran que tanto las condiciones de arranque como parada nunca puedan ser confundidas como datos.
 			
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.6\textwidth]{Imagenes/basic_timing.png}
+			\includegraphics[width=0.8\textwidth]{Imagenes/basic_timing.png}
 			\caption{Diagrama de tiempos genérico de una transferencia por $I^{2}C$}
 			\label{fig:basic_timing}
 		\end{figure} 
 
 			La transferencia esta hecha byte-a-byte con el MSB primero. Cada byte es seguido con un ``acknowledge" bit en el noveno pulso de reloj. El número de bytes en una transferencia no está restringido. Después de terminado, el master finaliza la transferencia creando una condición de parada (P), en la cual SDA cambia de bajo a alto mientras SCL se mantiene en alto. Luego de que la transferencia esta completada el bus debe esperara un pequeño tiempo (turnaround time) antes de inicializar otra transacción.
-	\subsection{Serial peripheral interface (SPI)}
 
 \end{document}

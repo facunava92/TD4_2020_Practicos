@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Jun 17 23:49:02 2020
+# Process ID: 84441
+# Current directory: /home/fnavarro/vivado/i2c_receiver/i2c_receiver.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/fnavarro/vivado/i2c_receiver/i2c_receiver.sim/sim_1/behav/xsim/xsim.dir/tb_i2c_a_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/fnavarro/vivado/i2c_receiver/i2c_receiver.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/fnavarro/vivado/i2c_receiver/i2c_receiver.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/fnavarro/vivado/i2c_receiver/i2c_receiver.sim/sim_1/behav/xsim/xsim.dir/tb_i2c_a_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/fnavarro/vivado/i2c_receiver/i2c_receiver.sim/sim_1/behav/xsim/xsim.dir/tb_i2c_a_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 17 23:49:06 2020. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 17 23:49:06 2020...

@@ -2,8 +2,8 @@
 # Vivado v2019.2.1 (64-bit)
 # SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
 # IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
-# Start of session at: Sat May 30 21:07:55 2020
-# Process ID: 153404
+# Start of session at: Sat Jun  6 17:43:59 2020
+# Process ID: 27580
 # Current directory: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.runs/synth_1
 # Command line: vivado -log VGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA.tcl
 # Log file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.runs/synth_1/VGA.vds

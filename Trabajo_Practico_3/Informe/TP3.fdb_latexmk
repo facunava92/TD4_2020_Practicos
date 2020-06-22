@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1589208930 "TP3.tex" "TP3.pdf" "TP3" 1589208931
+["pdflatex"] 1592866834 "TP3.tex" "TP3.pdf" "TP3" 1592866834
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1572595918 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1572595918 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -96,13 +96,13 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1588968226 8044938 7e75a5c7f1cc50a857e4d4150c862824 ""
   "Imagenes/LOGO.jpg" 1588044526 19747 4772602bbcdd11eac496e15d83f1bf3d ""
   "Imagenes/basic_timing.png" 1589208375 78656 647b1b57ef693629355c98d5e6ef6822 ""
-  "TP3.aux" 1589208931 1883 9f3d7d3f18dcdfb78e14b83a3aa4946d "pdflatex"
-  "TP3.out" 1589208931 433 b9d01eb3a697b7ed3de543d2e2703f01 "pdflatex"
-  "TP3.tex" 1589208929 5486 1bdb7581ef91c5418354faa0d7d903b0 ""
-  "TP3.toc" 1589208931 588 5f6291846f9144d2e985773aa046cdf0 "pdflatex"
+  "TP3.aux" 1592866834 1736 662b57ee3368ef1d9b90267ee6daba96 "pdflatex"
+  "TP3.out" 1592866834 336 7a08a1cc3e9abc3d1253fba79bcecac4 "pdflatex"
+  "TP3.tex" 1592866833 5452 f5b44f8b7f7f65eb8cc04f4429a99349 ""
+  "TP3.toc" 1592866834 481 ff684fc32c10410d42860a31ed3db26f "pdflatex"
   (generated)
   "TP3.out"
-  "TP3.toc"
-  "TP3.pdf"
   "TP3.log"
+  "TP3.pdf"
   "TP3.aux"
+  "TP3.toc"

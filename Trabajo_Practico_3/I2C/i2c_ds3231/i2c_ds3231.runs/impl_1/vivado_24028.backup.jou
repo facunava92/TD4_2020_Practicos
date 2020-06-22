@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Mon Jun 22 13:39:08 2020
+# Process ID: 24028
+# Current directory: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.runs/impl_1
+# Command line: vivado -log i2c.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source i2c.tcl -notrace
+# Log file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.runs/impl_1/i2c.vdi
+# Journal file: /run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_3/I2C/i2c_ds3231/i2c_ds3231.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source i2c.tcl -notrace

@@ -1,10 +1,6 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/clk_wiz_0_clk_wiz.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0_clk_wiz'
-INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/graphic_unit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'graphic_unit'
 INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/vga_sync.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'vga_sync'
-INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/vga_test.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'vga_test'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sources_1/new/VGA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VGA'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/fnavarro/DATA/Git/6to/Tecnicas_Digitales_IV/Practicos/Trabajo_Practico_2/VGA/VGA.srcs/sim_1/new/tb_VGA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_VGA'

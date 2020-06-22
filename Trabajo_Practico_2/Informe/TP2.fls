@@ -168,6 +168,12 @@ INPUT TP2.toc
 INPUT TP2.toc
 OUTPUT TP2.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT Imagenes/barras.png
+INPUT ./Imagenes/barras.png
+INPUT ./Imagenes/barras.png
+INPUT Imagenes/estructura.png
+INPUT ./Imagenes/estructura.png
+INPUT ./Imagenes/estructura.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT TP2.aux
 INPUT ./TP2.out

@@ -1,3 +1,9 @@
 \babel@toc {spanish}{}
-\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{2}{section.1}% 
-\contentsline {subsection}{\numberline {1.1}Multimedia}{2}{subsection.1.1}% 
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n.}{2}{section.1}% 
+\contentsline {section}{\numberline {2}Desarrollo Te\IeC {\'o}rico.}{2}{section.2}% 
+\contentsline {section}{\numberline {3}Generador de se\IeC {\~n}al de video.}{2}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Consigna.}{2}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Modificaciones.}{2}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Desarrollo.}{2}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Estructura del proyecto}{2}{subsubsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.4}Multimedia.}{3}{subsection.3.4}% 

@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4059546203103734205  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 09aef27548234c149a3a07a28023207c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_i2c_a_behav xil_defaultlib.tb_i2c_a" , 
+    buildDate : "Dec  5 2019" , 
+    buildTime : "04:51:02" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/tb_i2c_a_behav/xsimk\"   \"xsim.dir/tb_i2c_a_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/tb_i2c_a_behav/obj/xsim_1.lnx64.o\" -L\"/opt/Xilinx/Vivado/2019.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

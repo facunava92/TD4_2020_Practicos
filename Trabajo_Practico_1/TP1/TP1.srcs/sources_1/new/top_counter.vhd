@@ -6,9 +6,9 @@
 -- Grupo: 5
 -- Integrantes:
 --      NAVARRO, Facundo		Leg. Nº:63809
--- Fecha de Entrega: 28/04/2020.
--- Hardware utilizado: Kit-CPLD
--- UCF utilizado: cpld.xdc
+-- Fecha de Entrega: 17/05/2020.
+-- Hardware utilizado: Basys3
+-- UCF utilizado: basys3.xdc
 ----------------------------------------------------------------------------------
 
 library IEEE;

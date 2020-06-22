@@ -1,6 +1,5 @@
 \BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
-\BOOKMARK [1][-]{section.2}{Desarrollo}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Personal system version 2 \(PS2\)}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Inter intergrated circuit \(I2C\)}{section.2}% 4
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Operaci\363n de la interfaz I2C}{subsection.2.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{Serial peripheral interface \(SPI\)}{section.2}% 6
+\BOOKMARK [1][-]{section.2}{Personal system version 2 \(PS2\)}{}% 2
+\BOOKMARK [1][-]{section.3}{Serial peripheral interface \(SPI\)}{}% 3
+\BOOKMARK [1][-]{section.4}{Inter intergrated circuit \(I2C\)}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Operaci\363n de la interfaz I2C}{section.4}% 5
