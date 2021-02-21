@@ -1,6 +1,14 @@
-\babel@toc {spanish}{}
-\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{2}{section.1}% 
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}% 
 \contentsline {section}{\numberline {2}Personal system version 2 (PS2)}{2}{section.2}% 
 \contentsline {section}{\numberline {3}Serial peripheral interface (SPI)}{2}{section.3}% 
 \contentsline {section}{\numberline {4}Inter intergrated circuit ($I^{2}C$)}{2}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Operaci\IeC {\'o}n de la interfaz $I^{2}C$}{2}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.1}Operación de la interfaz $I^{2}C$}{2}{subsection.4.1}% 
+\contentsline {paragraph}{Diagrama de tiempos.}{2}{section*.2}% 
+\contentsline {paragraph}{Características eléctricas.}{3}{section*.3}% 
+\contentsline {paragraph}{Protocolo de bus.}{3}{section*.4}% 
+\contentsline {subsubsection}{\numberline {4.1.1}Módulo ds3231.}{4}{subsubsection.4.1.1}% 
+\contentsline {subsubsection}{\numberline {4.1.2}Estructura del proyecto}{5}{subsubsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.2}Protocolo $I^{2}C$}{5}{subsection.4.2}% 
+\contentsline {subsubsection}{\numberline {4.2.1}Simulación}{7}{subsubsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.3}Multimedia}{8}{subsection.4.3}% 
